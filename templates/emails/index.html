@@ -1,0 +1,46 @@
+{% extends 'emails/base.html' %}
+{% block content %}
+
+<div class="row">
+	<div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+		<div class="indexcontainer">
+			<h1 align="center"> Agora Acronym Directory </h1>
+			<h4 align="center"> Type the acronym of a Cambridge society </h4>
+					{% if Acronym %}
+					<select id="select-name" placeholder="Select a person..." >
+					{% for item in Acronym %}
+						<option value="{{item.name_only}}">{{item.name}}
+					{% endfor %}
+					</select>
+					</select>
+				<form role="form" id="contacts">
+                	<input type="submit" value="Submit" class="btn btn-info btn-block"></form>
+					{% else%}
+					<strong> There are no friends in my list. </strong>
+				{% endif %}
+			<div class="addbutton">	
+				<br><a href="/directory/add_person" class="btn btn-info" role="button">Add Person</a></br>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script>
+
+$(function() {
+    $('#select-name').selectize({    create:true, plugins: ['remove_button']
+});
+
+  $('#contacts').submit(function(e){
+    e.preventDefault();
+
+ window.location.href = "http://joinagora.com/events/#search/all?s="+($('#select-name').val())
+   
+  });
+});
+
+</script>
+
+{% endblock %}
+
