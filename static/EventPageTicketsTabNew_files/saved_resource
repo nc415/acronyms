@@ -1,0 +1,554 @@
+this.Urls = (function () {
+
+    function Urls() {}
+
+    Urls._instance = {
+        url_patterns:{}
+    };
+
+    Urls._get_url = function (url_pattern) {
+        var self = this._instance
+        return function () {
+            var index, url, url_arg, url_args, _i, _len, _ref;
+            _ref = self.url_patterns[url_pattern], url = _ref[0], url_args = _ref[1];
+            for (index = _i = 0, _len = url_args.length; _i < _len; index = ++_i) {
+                url_arg = url_args[index];
+                url = url.replace("%(" + url_arg + ")s", arguments[index] || '');
+            }
+            return '/' + url;
+        };
+    };
+
+    Urls.init = function () {
+        var name, pattern, self, url_patterns, _i, _len, _ref;
+        url_patterns = [
+            
+                [
+                    'mayweek_buyer_ticketsale_confirm_agreement', ['marketplace/my\u002Dtickets/buyer/confirm/%(ticket_id)s', ['ticket_id']]
+                ],
+            
+                [
+                    'bought_tickets', ['tickets/', []]
+                ],
+            
+                [
+                    'job_application', ['jobs/%(job_posting_id)s', ['job_posting_id']]
+                ],
+            
+                [
+                    'REST_ajax_upload', ['ajax\u002Dupload/', []]
+                ],
+            
+                [
+                    'login_non_raven_embedded', ['accounts/login/non_raven_embedded', []]
+                ],
+            
+                [
+                    'REST_groups_list', ['api/v1/groups/', []]
+                ],
+            
+                [
+                    'event_attendees', ['events/%(pk)s/attendees', ['pk']]
+                ],
+            
+                [
+                    'add_ticket_buyer', ['events/%(event_id)s/add\u002Dbuyer/%(ticket_type_id)s', ['event_id','ticket_type_id']]
+                ],
+            
+                [
+                    'mayweek_my_tickets', ['marketplace/my\u002Dtickets/', []]
+                ],
+            
+                [
+                    'auth_login', ['api/v1/auth/login', []]
+                ],
+            
+                [
+                    'REST_nonstudentsignup_list', ['api/v1/core/nonstudent_signup/', []]
+                ],
+            
+                [
+                    'create_event_popup', ['events/create/popup/', []]
+                ],
+            
+                [
+                    'event_link_modal_form', ['event\u002Daggregation/event_link', []]
+                ],
+            
+                [
+                    'REST_users_detail', ['api/v1/users/%(pk)s/', ['pk']]
+                ],
+            
+                [
+                    'django.swagger.base.view', ['api/v1/docs/', []]
+                ],
+            
+                [
+                    'mayweek_sell_ticket', ['marketplace/sell_ticket/', []]
+                ],
+            
+                [
+                    'event_set_coverphoto', ['events/%(event_id)s/set_coverphoto', ['event_id']]
+                ],
+            
+                [
+                    'student_signup_email_verification', ['verify/%(email_address)s/%(signup_id)s/%(verification_token)s', ['email_address','signup_id','verification_token']]
+                ],
+            
+                [
+                    'password_reset_sent', ['recover/%(signature)s/', ['signature']]
+                ],
+            
+                [
+                    'mayweek_dashboard', ['marketplace/', []]
+                ],
+            
+                [
+                    'js_reverse', ['api/v1/api/jsreverse/', []]
+                ],
+            
+                [
+                    'REST_prelaunch_signup_list', ['api/v1/core/prelaunch_signup/', []]
+                ],
+            
+                [
+                    'user_registration', ['accounts/registration/', []]
+                ],
+            
+                [
+                    'ticket_buyer_database_modal', ['events/%(event_id)s/ticket\u002Dbuyers/', ['event_id']]
+                ],
+            
+                [
+                    'REST_event_attendances_detail', ['api/v1/events/%(event_pk)s/attendances/%(pk)s/', ['event_pk','pk']]
+                ],
+            
+                [
+                    'group_page', ['groups/%(pk)s/', ['pk']]
+                ],
+            
+                [
+                    'REST_mayweek_ticket_types_detail', ['api/v1/mayweek_events/%(event_pk)s/ticket_types/%(pk)s/', ['event_pk','pk']]
+                ],
+            
+                [
+                    'job_listings', ['jobs/', []]
+                ],
+            
+                [
+                    'REST_parser_TalksDotCamParser', ['event\u002Daggregation/TalksDotCamParser', []]
+                ],
+            
+                [
+                    'REST_education_degrees_detail', ['api/v1/education_degrees/%(pk)s/', ['pk']]
+                ],
+            
+                [
+                    'mayweek_how_it_works', ['marketplace/how\u002Dit\u002Dworks', []]
+                ],
+            
+                [
+                    'REST_mayweek_ticket_types_list', ['api/v1/mayweek_events/%(event_pk)s/ticket_types/', ['event_pk']]
+                ],
+            
+                [
+                    'update_seller_details_modal', ['events/%(event_id)s/seller\u002Ddetails/%(pk)s/update/', ['event_id','pk']]
+                ],
+            
+                [
+                    'create_ticket_type_modal', ['events/%(event_id)s/ticket\u002Dtypes/create/', ['event_id']]
+                ],
+            
+                [
+                    'leave_group', ['accounts/leave_group/%(group_id)s', ['group_id']]
+                ],
+            
+                [
+                    'REST_top_tags_detail', ['api/v1/events/tags/top/%(pk)s/', ['pk']]
+                ],
+            
+                [
+                    'mayweek_faq_sellers', ['marketplace/how\u002Dit\u002Dworks/sellers\u002Dfaq', []]
+                ],
+            
+                [
+                    'REST_users_set_password', ['api/v1/users/%(pk)s/set_password/', ['pk']]
+                ],
+            
+                [
+                    'mayweek_ticket_buyer_report_issue', ['marketplace/my\u002Dtickets/buyer/report_issue/%(pk)s', ['pk']]
+                ],
+            
+                [
+                    'event_details', ['events/%(pk)s/', ['pk']]
+                ],
+            
+                [
+                    'REST_groups_detail', ['api/v1/groups/%(pk)s/', ['pk']]
+                ],
+            
+                [
+                    'ajax_lookup', ['admin/ajax_select/ajax_lookup/%(channel)s', ['channel']]
+                ],
+            
+                [
+                    'REST_event_list', ['api/v1/events/', []]
+                ],
+            
+                [
+                    'REST_mayweek_events_detail', ['api/v1/mayweek_events/%(pk)s/', ['pk']]
+                ],
+            
+                [
+                    'claim_event', ['events/%(event_id)s/claim', ['event_id']]
+                ],
+            
+                [
+                    'mayweek_reconfirm_tandc', ['marketplace/reconfirm\u002Drandc/', []]
+                ],
+            
+                [
+                    'ticket_purchase_external_authentication_return', ['tickets/non\u002Dauth\u002Dsales\u002Dexternal\u002Dlogin\u002Dreturn/', []]
+                ],
+            
+                [
+                    'login_non_raven_modal', ['accounts/login/non_raven_modal', []]
+                ],
+            
+                [
+                    'facebook_page_redirect', ['external/facebook', []]
+                ],
+            
+                [
+                    'update_ticket_type_modal', ['events/%(event_id)s/ticket\u002Dtype/%(pk)s/update/', ['event_id','pk']]
+                ],
+            
+                [
+                    'cancel_event', ['events/cancel/%(pk)s', ['pk']]
+                ],
+            
+                [
+                    'change_event_details_modal', ['events/%(pk)s/edit_details', ['pk']]
+                ],
+            
+                [
+                    'my_tickets', ['tickets/', []]
+                ],
+            
+                [
+                    'buy_ticket', ['events/%(event_id)s/buy\u002Dticket/%(ticket_type_id)s', ['event_id','ticket_type_id']]
+                ],
+            
+                [
+                    'REST_mayweek_ticket_interests_detail', ['api/v1/ticket_interests/%(pk)s/', ['pk']]
+                ],
+            
+                [
+                    'password_reset_done', ['reset/done/', []]
+                ],
+            
+                [
+                    'django.swagger.resources.view', ['api/v1/docs/api\u002Ddocs/', []]
+                ],
+            
+                [
+                    'REST_event_attendances_list', ['api/v1/events/%(event_pk)s/attendances/', ['event_pk']]
+                ],
+            
+                [
+                    'api_auth_raven', ['api/v1/auth/raven', []]
+                ],
+            
+                [
+                    'ticket_type_stop_sale', ['events/%(event_id)s/tickets/%(ticket_type_id)s/stop\u002Dsale', ['event_id','ticket_type_id']]
+                ],
+            
+                [
+                    'change_group_details_modal', ['accounts/group_details_update/%(pk)s', ['pk']]
+                ],
+            
+                [
+                    'REST_api_root', ['api/v1/', []]
+                ],
+            
+                [
+                    'REST_university_detail', ['api/v1/core/university/%(pk)s/', ['pk']]
+                ],
+            
+                [
+                    'mayweek_seller_cancel_ticket', ['marketplace/my\u002Dtickets/seller/cancel_ticket/%(ticket_id)s', ['ticket_id']]
+                ],
+            
+                [
+                    'logout', ['accounts/logout/', []]
+                ],
+            
+                [
+                    'REST_university_list', ['api/v1/core/university/', []]
+                ],
+            
+                [
+                    'ics_calendar', ['events/user/%(uuid)s/calendar.ics', ['uuid']]
+                ],
+            
+                [
+                    'js_enums', ['api/v1/api/jsenums/', []]
+                ],
+            
+                [
+                    'mayweek_ticket_buyer_update_details', ['marketplace/my\u002Dtickets/buyer/update_details/%(pk)s', ['pk']]
+                ],
+            
+                [
+                    'mayweek_login_page', ['marketplace/login', []]
+                ],
+            
+                [
+                    'REST_parser_BaseEventsParser', ['event\u002Daggregation/BaseEventsParser', []]
+                ],
+            
+                [
+                    'create_event', ['events/create', []]
+                ],
+            
+                [
+                    'api_auth_raven_cancelled', ['api/v1/auth/raven/cancelled', []]
+                ],
+            
+                [
+                    'ticket_pdf', ['tickets/%(pk)s/pdf', ['pk']]
+                ],
+            
+                [
+                    'raven_login', ['raven/login/', []]
+                ],
+            
+                [
+                    'user_settings', ['accounts/user_settings/', []]
+                ],
+            
+                [
+                    'event_coverphoto_popup', ['events/%(event_id)s/coverphoto', ['event_id']]
+                ],
+            
+                [
+                    'REST_event_attendance', ['api/v1/events/%(pk)s/attendance/', ['pk']]
+                ],
+            
+                [
+                    'user_profile_edit', ['accounts/user_profile/%(pk)s', ['pk']]
+                ],
+            
+                [
+                    'edit_ticket_buyer', ['events/%(event_id)s/edit\u002Dbuyer/%(ticket_type_id)s/%(ticket_purchase_id)s', ['event_id','ticket_type_id','ticket_purchase_id']]
+                ],
+            
+                [
+                    'mayweek_buy_resale_ticket', ['marketplace/buy_resale_ticket/%(ticket_id)s', ['ticket_id']]
+                ],
+            
+                [
+                    'signup_modal', ['signup/', []]
+                ],
+            
+                [
+                    'REST_mayweek_events_list', ['api/v1/mayweek_events/', []]
+                ],
+            
+                [
+                    'REST_ticket_purchases_refund', ['api/v1/events/%(event_pk)s/ticket\u002Dpurchases/%(pk)s/refund/', ['event_pk','pk']]
+                ],
+            
+                [
+                    'REST_studentsignup_check_email_token', ['api/v1/core/student_signup/%(pk)s/check_email_token/', ['pk']]
+                ],
+            
+                [
+                    'mayweek_seller_confirm_ticketsale_agreement', ['marketplace/my\u002Dtickets/seller/confirm/%(ticket_id)s', ['ticket_id']]
+                ],
+            
+                [
+                    'REST_top_tags_list', ['api/v1/events/tags/top/', []]
+                ],
+            
+                [
+                    'ticket_buyers_export', ['events/%(event_id)s/tickets/buyers/ticket\u002Dsales.%(file_type)s', ['event_id','file_type']]
+                ],
+            
+                [
+                    'REST_tags_detail', ['api/v1/events/tags/search/%(pk)s/', ['pk']]
+                ],
+            
+                [
+                    'mayweek_buy_ticket', ['marketplace/buy_ticket/%(ticket_type_id)s', ['ticket_type_id']]
+                ],
+            
+                [
+                    'raven_logout', ['raven/logout/', []]
+                ],
+            
+                [
+                    'ticket_detail', ['tickets/%(pk)s/print', ['pk']]
+                ],
+            
+                [
+                    'REST_parser_FacebookEventsParser', ['event\u002Daggregation/FacebookEventsParser', []]
+                ],
+            
+                [
+                    'REST_ticket_purchases_detail', ['api/v1/events/%(event_pk)s/ticket\u002Dpurchases/%(pk)s/', ['event_pk','pk']]
+                ],
+            
+                [
+                    'REST_parser_FacebookSearchEventsParser', ['event\u002Daggregation/FacebookSearchEventsParser', []]
+                ],
+            
+                [
+                    'REST_event_detail', ['api/v1/events/%(pk)s/', ['pk']]
+                ],
+            
+                [
+                    'password_reset_recover', ['recover/', []]
+                ],
+            
+                [
+                    'password_reset_reset', ['reset/%(token)s/', ['token']]
+                ],
+            
+                [
+                    'switch_site', ['switch\u002Dsite/%(site_domain)s', ['site_domain']]
+                ],
+            
+                [
+                    'delete_ticket_type', ['events/%(event_id)s/ticket\u002Dtype/%(pk)s/delete/%(redirect_to)s', ['event_id','pk','redirect_to']]
+                ],
+            
+                [
+                    'events_dashboard', ['events/', []]
+                ],
+            
+                [
+                    'REST_fields_of_study_list', ['api/v1/fields_of_study/', []]
+                ],
+            
+                [
+                    'mayweek_event_ticket_sales', ['marketplace/event\u002Dticket\u002Dsales/%(ticket_type_id)s', ['ticket_type_id']]
+                ],
+            
+                [
+                    'raven_return', ['raven/raven_return/', []]
+                ],
+            
+                [
+                    'REST_ticket_purchases_list', ['api/v1/events/%(event_pk)s/ticket\u002Dpurchases/', ['event_pk']]
+                ],
+            
+                [
+                    'mayweek_faq_buyers', ['marketplace/how\u002Dit\u002Dworks/buyers\u002Dfaq', []]
+                ],
+            
+                [
+                    'REST_studentsignup_list', ['api/v1/core/student_signup/', []]
+                ],
+            
+                [
+                    'calendar_sync_popup', ['events/calendarsync/popup/', []]
+                ],
+            
+                [
+                    'django.swagger.api.view', ['api/v1/docs/api\u002Ddocs/%(path)s', ['path']]
+                ],
+            
+                [
+                    'REST_mayweek_ticket_interests_list', ['api/v1/ticket_interests/', []]
+                ],
+            
+                [
+                    'REST_no_student_email_signup_list', ['api/v1/core/no_student_email_signup/', []]
+                ],
+            
+                [
+                    'REST_education_degrees_list', ['api/v1/education_degrees/', []]
+                ],
+            
+                [
+                    'add_popup', ['admin/ajax_select/add_popup/%(app_label)s/%(model)s', ['app_label','model']]
+                ],
+            
+                [
+                    'REST_fields_of_study_detail', ['api/v1/fields_of_study/%(pk)s/', ['pk']]
+                ],
+            
+                [
+                    'site_info', ['info.html', []]
+                ],
+            
+                [
+                    'REST_parser_RSSBasedParser', ['event\u002Daggregation/RSSBasedParser', []]
+                ],
+            
+                [
+                    'login_page', ['', []]
+                ],
+            
+                [
+                    'REST_tags_list', ['api/v1/events/tags/search/', []]
+                ],
+            
+                [
+                    'api_auth', ['api/v1/auth', []]
+                ],
+            
+                [
+                    'REST_event_visibility', ['api/v1/events/%(pk)s/visibility/', ['pk']]
+                ],
+            
+                [
+                    'su_user', ['accounts/su/%(user)s/', ['user']]
+                ],
+            
+                [
+                    'mayweek_buyer_cancel_ticket', ['marketplace/my\u002Dtickets/buyer/cancel_ticket/%(ticket_id)s', ['ticket_id']]
+                ],
+            
+                [
+                    'weekly_digest_unsubscribe', ['digest/unsubscribe/%(email_address)s/', ['email_address']]
+                ],
+            
+                [
+                    'group_coverphoto_popup', ['groups/%(group_id)s/coverphoto', ['group_id']]
+                ],
+            
+                [
+                    'mayweek_unlist_ticket', ['marketplace/my\u002Dtickets/seller/unlist/%(ticket_id)s', ['ticket_id']]
+                ],
+            
+                [
+                    'mailer_unsubscribe', ['mail/unsubscribe/%(list_name)s/%(email_ref)s/%(email_address)s/', ['list_name','email_ref','email_address']]
+                ],
+            
+                [
+                    'user_signup', ['accounts/signup/', []]
+                ],
+            
+                [
+                    'mayweek_remove_ticket_resale', ['marketplace/my\u002Dtickets/remove_resale/%(ticketresale_id)s', ['ticketresale_id']]
+                ]
+            
+        ];
+        self = this._instance;
+        self.url_patterns = {};
+        for (_i = 0, _len = url_patterns.length; _i < _len; _i++) {
+            _ref = url_patterns[_i], name = _ref[0], pattern = _ref[1];
+            self.url_patterns[name] = pattern;
+            this[name] = this._get_url(name);
+        }
+        return self;
+    };
+
+    return Urls;
+})();
+
+this.Urls.init();
+
+

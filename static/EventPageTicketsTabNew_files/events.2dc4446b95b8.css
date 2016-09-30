@@ -1,0 +1,2728 @@
+<!DOCTYPE html><html lang="en" class=""><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#"><meta charset='utf-8'><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta http-equiv="Content-Language" content="en"><title>bootstrap-timepicker/bootstrap-timepicker.css at gh-pages · jdewit/bootstrap-timepicker</title><link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub"><link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub"><link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png"><link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png"><link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png"><link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png"><meta property="fb:app_id" content="1401488693436528"><meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="jdewit/bootstrap-timepicker" name="twitter:title" /><meta content="bootstrap-timepicker - A simple timepicker component for Twitter Bootstrap" name="twitter:description" /><meta content="https://avatars1.githubusercontent.com/u/467498?v=3&amp;s=400" name="twitter:image:src" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://avatars1.githubusercontent.com/u/467498?v=3&amp;s=400" property="og:image" /><meta content="jdewit/bootstrap-timepicker" property="og:title" /><meta content="https://github.com/jdewit/bootstrap-timepicker" property="og:url" /><meta content="bootstrap-timepicker - A simple timepicker component for Twitter Bootstrap" property="og:description" /><meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats"><meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors"><link rel="assets" href="https://assets-cdn.github.com/"><link rel="web-socket" href="wss://live.github.com/_sockets/ODcyMjYzMzo5N2IyODU4ZTE4ZGU3NGRhMjVhODVlYjcwMzM5YTI1Zjo4YWZlOGJkZTc1Mzg3ZDRiNmE2OGFhMzc5ODhjMDYwM2UwYmExOGRkYjY0ODA0YTk1MjBlYzU2Nzc5YTI3YTg1--8b61e0ab102810a24bba09ae429e0c151c0643f9"><meta name="pjax-timeout" content="1000"><link rel="sudo-modal" href="/sessions/sudo_modal"><meta name="features-enabled" content="41,8946,110"><meta name="msapplication-TileImage" content="/windows-tile.png"><meta name="msapplication-TileColor" content="#ffffff"><meta name="selected-link" value="repo_source" data-pjax-transient><meta name="google-analytics" content="UA-3769691-2"><meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="519BD86B:1223:90AB1EF:5592ED96" name="octolytics-dimension-request_id" /><meta content="8722633" name="octolytics-actor-id" /><meta content="nc415" name="octolytics-actor-login" /><meta content="c0717ff86ee284520cbed54bfff699a3a021fea7b1a081bf7fe0ecf1a2f03246" name="octolytics-actor-hash" /><meta content="Rails, view, blob#show" name="analytics-event" /><meta class="js-ga-set" name="dimension1" content="Logged In"><meta name="is-dotcom" content="true"><meta name="hostname" content="github.com"><meta name="user-login" content="nc415"><link rel="icon" sizes="any" mask href="https://assets-cdn.github.com/pinned-octocat.svg"><meta name="theme-color" content="#4078c0"><link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico"><meta content="authenticity_token" name="csrf-param" /><meta content="wRHH1PvLhOd/MtUjvmOuNpQxmqoWViMfd0Zj8XpoGyD+RY5Anr2DeiAp6hkdsXZIiaUlJ2yWifnYYzFZ+KB+Sg==" name="csrf-token" /><link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github/index-232355eb24f646c56e2cef71efc9093523c9a76ad362429a9da14b5d6f60c0e0.css" media="all" rel="stylesheet" /><link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2/index-53b81bbd58011083c0ec0ad891de925f2dc177a927a56ebeed25af072f386e72.css" media="all" rel="stylesheet" /><meta http-equiv="x-pjax-version" content="21dfad4b243cddb56fbe4c508ef93914"><meta name="description" content="bootstrap-timepicker - A simple timepicker component for Twitter Bootstrap"><meta name="go-import" content="github.com/jdewit/bootstrap-timepicker git https://github.com/jdewit/bootstrap-timepicker.git"><meta content="467498" name="octolytics-dimension-user_id" /><meta content="jdewit" name="octolytics-dimension-user_login" /><meta content="4175985" name="octolytics-dimension-repository_id" /><meta content="jdewit/bootstrap-timepicker" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="4175985" name="octolytics-dimension-repository_network_root_id" /><meta content="jdewit/bootstrap-timepicker" name="octolytics-dimension-repository_network_root_nwo" /><link href="https://github.com/jdewit/bootstrap-timepicker/commits/gh-pages.atom" rel="alternate" title="Recent Commits to bootstrap-timepicker:gh-pages" type="application/atom+xml"></head><body class="logged_in  env-production macintosh vis-public page-blob"><a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a><div class="wrapper"><div class="header header-logged-in true" role="banner"><div class="container clearfix"><a class="header-logo-invertocat" href="https://github.com/" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo"><span class="mega-octicon octicon-mark-github"></span></a><div class="site-search repo-scope js-site-search" role="search"><form accept-charset="UTF-8" action="/jdewit/bootstrap-timepicker/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/jdewit/bootstrap-timepicker/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div><label class="js-chromeless-input-container form-control"><div class="scope-badge">This repository</div><input type="text" class="js-site-search-focus js-site-search-field is-clearable chromeless-input" data-hotkey="s" name="q" placeholder="Search" data-global-scope-placeholder="Search GitHub" data-repo-scope-placeholder="Search" tabindex="1" autocapitalize="off"></label></form></div><ul class="header-nav left" role="navigation"><li class="header-nav-item"><a href="/pulls" class="js-selected-navigation-item header-nav-link" data-ga-click="Header, click, Nav menu - item:pulls context:user" data-hotkey="g p" data-selected-links="/pulls /pulls/assigned /pulls/mentioned /pulls">Pull requests </a></li><li class="header-nav-item"><a href="/issues" class="js-selected-navigation-item header-nav-link" data-ga-click="Header, click, Nav menu - item:issues context:user" data-hotkey="g i" data-selected-links="/issues /issues/assigned /issues/mentioned /issues">Issues </a></li><li class="header-nav-item"><a class="header-nav-link" href="https://gist.github.com" data-ga-click="Header, go to gist, text:gist">Gist</a></li></ul><ul class="header-nav user-nav right" id="user-links"><li class="header-nav-item"><span class="js-socket-channel js-updatable-content" data-channel="notification-changed:nc415" data-url="/notifications/header"><a href="/notifications" aria-label="You have unread notifications" class="header-nav-link notification-indicator tooltipped tooltipped-s" data-ga-click="Header, go to notifications, icon:unread" data-hotkey="g n"><span class="mail-status unread"></span><span class="octicon octicon-inbox"></span></a></span></li><li class="header-nav-item dropdown js-menu-container"><a class="header-nav-link tooltipped tooltipped-s js-menu-target" href="/new" aria-label="Create new..." data-ga-click="Header, create new, icon:add"><span class="octicon octicon-plus left"></span><span class="dropdown-caret"></span></a><div class="dropdown-menu-content js-menu-content"><ul class="dropdown-menu dropdown-menu-sw"><a class="dropdown-item" href="/new" data-ga-click="Header, create new repository">New repository </a><a class="dropdown-item" href="/organizations/new" data-ga-click="Header, create new organization">New organization </a><div class="dropdown-divider"></div><div class="dropdown-header"><span title="jdewit/bootstrap-timepicker">This repository</span></div><a class="dropdown-item" href="/jdewit/bootstrap-timepicker/issues/new" data-ga-click="Header, create new issue">New issue </a></ul></div></li><li class="header-nav-item dropdown js-menu-container"><a class="header-nav-link name tooltipped tooltipped-s js-menu-target" href="/nc415" aria-label="View profile and more" data-ga-click="Header, show menu, icon:avatar"><img alt="@nc415" class="avatar" height="20" src="https://avatars2.githubusercontent.com/u/8722633?v=3&amp;s=40" width="20" /><span class="dropdown-caret"></span></a><div class="dropdown-menu-content js-menu-content"><div class="dropdown-menu dropdown-menu-sw"><div class="dropdown-header header-nav-current-user css-truncate">Signed in as <strong class="css-truncate-target">nc415</strong></div><div class="dropdown-divider"></div><a class="dropdown-item" href="/nc415" data-ga-click="Header, go to profile, text:your profile">Your profile </a><a class="dropdown-item" href="/stars" data-ga-click="Header, go to starred repos, text:your stars">Your stars </a><a class="dropdown-item" href="/explore" data-ga-click="Header, go to explore, text:explore">Explore </a><a class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">Help </a><div class="dropdown-divider"></div><a class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">Settings </a><form accept-charset="UTF-8" action="/logout" class="logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="6zibqt3YmABnEGju40XGCc+QkzuPhb0GAHol+r5uI3KpLiLhPAbNLtcVLawwc6I2opQwn91FTHewp4FosQNBnw==" /></div><button class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">Sign out </button></form></div></div></li></ul></div></div><div id="start-of-content" class="accessibility-aid"></div><div class="site" itemscope itemtype="http://schema.org/WebPage"><div id="js-flash-container"></div><div class="pagehead repohead instapaper_ignore readability-menu"><div class="container"><ul class="pagehead-actions"><li><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="bhwfvFKctu5pHhUoPkjqxBXfgT1/OntB2Pp6WZg/QsQl8dUS7H2dngFLk6xj4bTptDUa7XmenmqQoQ775GtQ0w==" /></div><input id="repository_id" name="repository_id" type="hidden" value="4175985" /><div class="select-menu js-menu-container js-select-menu"><a href="/jdewit/bootstrap-timepicker/subscription" class="btn btn-sm btn-with-count select-menu-button js-menu-target" role="button" tabindex="0" aria-haspopup="true" data-ga-click="Repository, click Watch settings, action:blob#show"><span class="js-select-button"><span class="octicon octicon-eye"></span>Watch </span></a><a class="social-count js-social-count" href="/jdewit/bootstrap-timepicker/watchers">109 </a><div class="select-menu-modal-holder"><div class="select-menu-modal subscription-menu-modal js-menu-content" aria-hidden="true"><div class="select-menu-header"><span class="select-menu-title">Notifications</span><span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span></div><div class="select-menu-list js-navigation-container" role="menu"><div class="select-menu-item js-navigation-item selected" role="menuitem" tabindex="0"><span class="select-menu-item-icon octicon octicon-check"></span><div class="select-menu-item-text"><input checked="checked" id="do_included" name="do" type="radio" value="included" /><span class="select-menu-item-heading">Not watching</span><span class="description">Be notified when participating or @mentioned.</span><span class="js-select-button-text hidden-select-button-text"><span class="octicon octicon-eye"></span>Watch </span></div></div><div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0"><span class="select-menu-item-icon octicon octicon octicon-check"></span><div class="select-menu-item-text"><input id="do_subscribed" name="do" type="radio" value="subscribed" /><span class="select-menu-item-heading">Watching</span><span class="description">Be notified of all conversations.</span><span class="js-select-button-text hidden-select-button-text"><span class="octicon octicon-eye"></span>Unwatch </span></div></div><div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0"><span class="select-menu-item-icon octicon octicon-check"></span><div class="select-menu-item-text"><input id="do_ignore" name="do" type="radio" value="ignore" /><span class="select-menu-item-heading">Ignoring</span><span class="description">Never be notified.</span><span class="js-select-button-text hidden-select-button-text"><span class="octicon octicon-mute"></span>Stop ignoring </span></div></div></div></div></div></div></form></li><li><div class="js-toggler-container js-social-container starring-container "><form accept-charset="UTF-8" action="/jdewit/bootstrap-timepicker/unstar" class="js-toggler-form starred js-unstar-button" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="oAfGQkoqhpim5G04oWBR/hWsXmi+tKXoumKyAtjhfyuE6pV/FfdDdKFV5wW0HWvQjY2qZosSc3g+aoBW1RSwyA==" /></div><button class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Unstar jdewit/bootstrap-timepicker" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar"><span class="octicon octicon-star"></span>Unstar </button><a class="social-count js-social-count" href="/jdewit/bootstrap-timepicker/stargazers">1,268 </a></form><form accept-charset="UTF-8" action="/jdewit/bootstrap-timepicker/star" class="js-toggler-form unstarred js-star-button" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="81rgNx80q7hRk3Xc1hZrfgYxb4VPRCz/oGXGiXTIkLh56CSd3+evwvoKL6uARhiMHCZWlaKeVx59NZpz893Sxw==" /></div><button class="btn btn-sm btn-with-count js-toggler-target" aria-label="Star this repository" title="Star jdewit/bootstrap-timepicker" data-ga-click="Repository, click star button, action:blob#show; text:Star"><span class="octicon octicon-star"></span>Star </button><a class="social-count js-social-count" href="/jdewit/bootstrap-timepicker/stargazers">1,268 </a></form></div></li><li><form accept-charset="UTF-8" action="/jdewit/bootstrap-timepicker/fork" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="twyGJQpBrzTF2OVunCDg6yDGwXDiF2Z9xymbqJ+6S832wcSscnisOEOsMGxpSYk70H8z9MZaCJF+FRkns67qtA==" /></div><button type="submit" class="btn btn-sm btn-with-count" data-ga-click="Repository, show fork modal, action:blob#show; text:Fork" title="Fork your own copy of jdewit/bootstrap-timepicker to your account" aria-label="Fork your own copy of jdewit/bootstrap-timepicker to your account"><span class="octicon octicon-repo-forked"></span>Fork </button><a href="/jdewit/bootstrap-timepicker/network" class="social-count">967</a></form></li></ul><h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public"><span class="mega-octicon octicon-repo"></span><span class="author"><a href="/jdewit" class="url fn" itemprop="url" rel="author"><span itemprop="title">jdewit</span></a></span><!-- --><span class="path-divider">/</span><!-- --><strong><a href="/jdewit/bootstrap-timepicker" data-pjax="#js-repo-pjax-container">bootstrap-timepicker</a></strong><span class="page-context-loader"><img alt="" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" /></span></h1></div><!-- /.container --></div><!-- /.repohead --><div class="container"><div class="repository-with-sidebar repo-container new-discussion-timeline  "><div class="repository-sidebar clearfix"><nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders" role="navigation" data-pjax="#js-repo-pjax-container" data-issue-count-url="/jdewit/bootstrap-timepicker/issues/counts"><ul class="sunken-menu-group"><li class="tooltipped tooltipped-w" aria-label="Code"><a href="/jdewit/bootstrap-timepicker" aria-label="Code" class="selected js-selected-navigation-item sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /jdewit/bootstrap-timepicker"><span class="octicon octicon-code"></span><span class="full-word">Code</span><img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" /></a></li><li class="tooltipped tooltipped-w" aria-label="Issues"><a href="/jdewit/bootstrap-timepicker/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /jdewit/bootstrap-timepicker/issues"><span class="octicon octicon-issue-opened"></span><span class="full-word">Issues</span><span class="js-issue-replace-counter"></span><img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" /></a></li><li class="tooltipped tooltipped-w" aria-label="Pull requests"><a href="/jdewit/bootstrap-timepicker/pulls" aria-label="Pull requests" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /jdewit/bootstrap-timepicker/pulls"><span class="octicon octicon-git-pull-request"></span><span class="full-word">Pull requests</span><span class="js-pull-replace-counter"></span><img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" /></a></li><li class="tooltipped tooltipped-w" aria-label="Wiki"><a href="/jdewit/bootstrap-timepicker/wiki" aria-label="Wiki" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g w" data-selected-links="repo_wiki /jdewit/bootstrap-timepicker/wiki"><span class="octicon octicon-book"></span><span class="full-word">Wiki</span><img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" /></a></li></ul><div class="sunken-menu-separator"></div><ul class="sunken-menu-group"><li class="tooltipped tooltipped-w" aria-label="Pulse"><a href="/jdewit/bootstrap-timepicker/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /jdewit/bootstrap-timepicker/pulse"><span class="octicon octicon-pulse"></span><span class="full-word">Pulse</span><img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" /></a></li><li class="tooltipped tooltipped-w" aria-label="Graphs"><a href="/jdewit/bootstrap-timepicker/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /jdewit/bootstrap-timepicker/graphs"><span class="octicon octicon-graph"></span><span class="full-word">Graphs</span><img alt="" class="mini-loader" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif" width="16" /></a></li></ul></nav><div class="only-with-full-nav"><div class="js-clone-url clone-url open" data-protocol-type="http"><h3><span class="text-emphasized">HTTPS</span>clone URL</h3><div class="input-group js-zeroclipboard-container"><input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target" value="https://github.com/jdewit/bootstrap-timepicker.git" readonly="readonly"><span class="input-group-button"><button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button></span></div></div><div class="js-clone-url clone-url " data-protocol-type="ssh"><h3><span class="text-emphasized">SSH</span>clone URL</h3><div class="input-group js-zeroclipboard-container"><input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target" value="git@github.com:jdewit/bootstrap-timepicker.git" readonly="readonly"><span class="input-group-button"><button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button></span></div></div><div class="js-clone-url clone-url " data-protocol-type="subversion"><h3><span class="text-emphasized">Subversion</span>checkout URL</h3><div class="input-group js-zeroclipboard-container"><input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target" value="https://github.com/jdewit/bootstrap-timepicker" readonly="readonly"><span class="input-group-button"><button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button></span></div></div><div class="clone-options">You can clone with <form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone" class="inline-form js-clone-selector-form is-enabled" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="1wNazKpM31MVAiLcmCFlzGylrNvNk7aegpn0zk95H4pwrz39HnniRhtqFTKnlOIe2dylAnARN2+cqlxhOEpA1g==" /></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form>,<form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=ssh&amp;protocol_type=clone" class="inline-form js-clone-selector-form is-enabled" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="NcAV+Y1KEhnKa7yrnKjRnOF6YwYQURk2khzfMCmcjNtcVx1xooRcwuAURlUFGuXUnvAakafidaicEadtOXKT1Q==" /></div><button class="btn-link js-clone-selector" data-protocol="ssh" type="submit">SSH</button></form>,or <form accept-charset="UTF-8" action="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone" class="inline-form js-clone-selector-form is-enabled" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="dHt6h5ldhkHzJntg11T9PIymr0OpiiCrcey6pF8xyfv/eqzFyZfF3CtfQBDmhXKAITyGIIMgVX0I7IvTjIFITQ==" /></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>. <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you."><span class="octicon octicon-question"></span></a></div><a href="github-mac://openRepo/https://github.com/jdewit/bootstrap-timepicker" class="btn btn-sm sidebar-button" title="Save jdewit/bootstrap-timepicker to your computer and use it in GitHub Desktop." aria-label="Save jdewit/bootstrap-timepicker to your computer and use it in GitHub Desktop."><span class="octicon octicon-device-desktop"></span>Clone in Desktop </a><a href="/jdewit/bootstrap-timepicker/archive/gh-pages.zip" class="btn btn-sm sidebar-button" aria-label="Download the contents of jdewit/bootstrap-timepicker as a zip file" title="Download the contents of jdewit/bootstrap-timepicker as a zip file" rel="nofollow"><span class="octicon octicon-cloud-download"></span>Download ZIP </a></div></div><!-- /.repository-sidebar --><div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container><a href="/jdewit/bootstrap-timepicker/blob/f6cef44b5aecdf19704ea9b8c0af2b760ddef63b/css/bootstrap-timepicker.css" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a><!-- blob contrib key:blob_contributors:v21:8995c337161c2cbb6e7cd5be5cb6dcd8 --><div class="file-navigation js-zeroclipboard-container"><div class="select-menu js-menu-container js-select-menu left"><span class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w" data-ref="gh-pages" title="gh-pages" role="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true"><span class="octicon octicon-git-branch"></span><i>branch:</i><span class="js-select-button css-truncate-target">gh-pages</span></span><div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true"><div class="select-menu-modal"><div class="select-menu-header"><span class="select-menu-title">Switch branches/tags</span><span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span></div><div class="select-menu-filters"><div class="select-menu-text-filter"><input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="js-filterable-field js-navigation-enable" placeholder="Filter branches/tags"></div><div class="select-menu-tabs"><ul><li class="select-menu-tab"><a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab">Branches</a></li><li class="select-menu-tab"><a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab">Tags</a></li></ul></div></div><div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches"><div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring"><a class="select-menu-item js-navigation-item js-navigation-open selected" href="/jdewit/bootstrap-timepicker/blob/gh-pages/css/bootstrap-timepicker.css" data-name="gh-pages" data-skip-pjax="true" rel="nofollow"><span class="select-menu-item-icon octicon octicon-check"></span><span class="select-menu-item-text css-truncate-target" title="gh-pages">gh-pages </span></a></div><div class="select-menu-no-results">Nothing to show</div></div><div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags"><div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring"><div class="select-menu-item js-navigation-item "><span class="select-menu-item-icon octicon octicon-check"></span><a href="/jdewit/bootstrap-timepicker/tree/v0.2.6/css/bootstrap-timepicker.css" data-name="v0.2.6" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v0.2.6">v0.2.6</a></div><div class="select-menu-item js-navigation-item "><span class="select-menu-item-icon octicon octicon-check"></span><a href="/jdewit/bootstrap-timepicker/tree/v0.2.5/css/bootstrap-timepicker.css" data-name="v0.2.5" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v0.2.5">v0.2.5</a></div><div class="select-menu-item js-navigation-item "><span class="select-menu-item-icon octicon octicon-check"></span><a href="/jdewit/bootstrap-timepicker/tree/v0.2.4/css/bootstrap-timepicker.css" data-name="v0.2.4" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v0.2.4">v0.2.4</a></div><div class="select-menu-item js-navigation-item "><span class="select-menu-item-icon octicon octicon-check"></span><a href="/jdewit/bootstrap-timepicker/tree/v0.2.3/css/bootstrap-timepicker.css" data-name="v0.2.3" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v0.2.3">v0.2.3</a></div><div class="select-menu-item js-navigation-item "><span class="select-menu-item-icon octicon octicon-check"></span><a href="/jdewit/bootstrap-timepicker/tree/v0.2.2/css/bootstrap-timepicker.css" data-name="v0.2.2" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v0.2.2">v0.2.2</a></div><div class="select-menu-item js-navigation-item "><span class="select-menu-item-icon octicon octicon-check"></span><a href="/jdewit/bootstrap-timepicker/tree/v0.2.1/css/bootstrap-timepicker.css" data-name="v0.2.1" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v0.2.1">v0.2.1</a></div><div class="select-menu-item js-navigation-item "><span class="select-menu-item-icon octicon octicon-check"></span><a href="/jdewit/bootstrap-timepicker/tree/v0.2.0/css/bootstrap-timepicker.css" data-name="v0.2.0" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v0.2.0">v0.2.0</a></div><div class="select-menu-item js-navigation-item "><span class="select-menu-item-icon octicon octicon-check"></span><a href="/jdewit/bootstrap-timepicker/tree/v0.1.1/css/bootstrap-timepicker.css" data-name="v0.1.1" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="v0.1.1">v0.1.1</a></div></div><div class="select-menu-no-results">Nothing to show</div></div></div></div></div><div class="btn-group right"><a href="/jdewit/bootstrap-timepicker/find/gh-pages" class="js-show-file-finder btn btn-sm empty-icon tooltipped tooltipped-s" data-pjax data-hotkey="t" aria-label="Quickly jump between files"><span class="octicon octicon-list-unordered"></span></a><button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button></div><div class="breadcrumb js-zeroclipboard-target"><span class="repo-root js-repo-root"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/jdewit/bootstrap-timepicker" class="" data-branch="gh-pages" data-pjax="true" itemscope="url"><span itemprop="title">bootstrap-timepicker</span></a></span></span><span class="separator">/</span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/jdewit/bootstrap-timepicker/tree/gh-pages/css" class="" data-branch="gh-pages" data-pjax="true" itemscope="url"><span itemprop="title">css</span></a></span><span class="separator">/</span><strong class="final-path">bootstrap-timepicker.css</strong></div></div><div class="commit file-history-tease"><div class="file-history-tease-header"><img alt="@pgelinas" class="avatar" data-user="261076" height="24" src="https://avatars0.githubusercontent.com/u/261076?v=3&amp;s=48" width="24" /><span class="author"><a href="/pgelinas" rel="contributor">pgelinas</a></span><time datetime="2013-10-16T20:18:08Z" is="relative-time">Oct 16,2013</time><div class="commit-title"><a href="/jdewit/bootstrap-timepicker/commit/5ee798b2d70e67691313f22eb82fc8063b112c4c" class="message" data-pjax="true" title="Reworked widget&#39;s placement to avoid some problem wrt containers. Also enables orientation (up-down) of the widget.">Reworked widget's placement to avoid some problem wrt containers. Als…</a>
+        </div>
+    </div>
+
+    <div class="participation">
+      <p class="quickstat">
+        <a href="#blob_contributors_box" rel="facebox">
+          <strong>3</strong>
+           contributors
+        </a>
+      </p>
+          <a class="avatar-link tooltipped tooltipped-s" aria-label="jdewit" href="/jdewit/bootstrap-timepicker/commits/gh-pages/css/bootstrap-timepicker.css?author=jdewit"><img alt="@jdewit" class="avatar" data-user="467498" height="20" src="https://avatars3.githubusercontent.com/u/467498?v=3&amp;s=40" width="20" /> </a>
+    <a class="avatar-link tooltipped tooltipped-s" aria-label="marsuboss" href="/jdewit/bootstrap-timepicker/commits/gh-pages/css/bootstrap-timepicker.css?author=marsuboss"><img alt="@marsuboss" class="avatar" data-user="5856" height="20" src="https://avatars3.githubusercontent.com/u/5856?v=3&amp;s=40" width="20" /> </a>
+    <a class="avatar-link tooltipped tooltipped-s" aria-label="pgelinas" href="/jdewit/bootstrap-timepicker/commits/gh-pages/css/bootstrap-timepicker.css?author=pgelinas"><img alt="@pgelinas" class="avatar" data-user="261076" height="20" src="https://avatars2.githubusercontent.com/u/261076?v=3&amp;s=40" width="20" /> </a>
+
+
+    </div>
+    <div id="blob_contributors_box" style="display:none">
+      <h2 class="facebox-header">Users who have contributed to this file</h2>
+      <ul class="facebox-user-list">
+          <li class="facebox-user-list-item">
+            <img alt="@jdewit" data-user="467498" height="24" src="https://avatars1.githubusercontent.com/u/467498?v=3&amp;s=48" width="24" />
+            <a href="/jdewit">jdewit</a>
+          </li>
+          <li class="facebox-user-list-item">
+            <img alt="@marsuboss" data-user="5856" height="24" src="https://avatars1.githubusercontent.com/u/5856?v=3&amp;s=48" width="24" />
+            <a href="/marsuboss">marsuboss</a>
+          </li>
+          <li class="facebox-user-list-item">
+            <img alt="@pgelinas" data-user="261076" height="24" src="https://avatars0.githubusercontent.com/u/261076?v=3&amp;s=48" width="24" />
+            <a href="/pgelinas">pgelinas</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+<div class="file">
+  <div class="file-header">
+    <div class="file-actions">
+
+      <div class="btn-group">
+        <a href="/jdewit/bootstrap-timepicker/raw/gh-pages/css/bootstrap-timepicker.css" class="btn btn-sm " id="raw-url">Raw</a>
+          <a href="/jdewit/bootstrap-timepicker/blame/gh-pages/css/bootstrap-timepicker.css" class="btn btn-sm js-update-url-with-hash">Blame</a>
+        <a href="/jdewit/bootstrap-timepicker/commits/gh-pages/css/bootstrap-timepicker.css" class="btn btn-sm " rel="nofollow">History</a>
+      </div>
+
+        <a class="octicon-btn tooltipped tooltipped-nw"
+           href="github-mac://openRepo/https://github.com/jdewit/bootstrap-timepicker?branch=gh-pages&amp;filepath=css%2Fbootstrap-timepicker.css"
+           aria-label="Open this file in GitHub for Mac"
+           data-ga-click="Repository, open with desktop, type:mac">
+            <span class="octicon octicon-device-desktop"></span>
+        </a>
+
+            <form accept-charset="UTF-8" action="/jdewit/bootstrap-timepicker/edit/gh-pages/css/bootstrap-timepicker.css" class="inline-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="9qeRduCoH5rETftvBcrpS/Zid6cNy67lH3fKEBYGltORPicK8hc8BEHePeMQxOVAFPFuUfUpuDYdVJ6q8oW8tQ==" /></div>
+              <button class="octicon-btn tooltipped tooltipped-n" type="submit" aria-label="Fork this project and edit the file" data-hotkey="e" data-disable-with>
+                <span class="octicon octicon-pencil"></span>
+              </button>
+</form>
+          <form accept-charset="UTF-8" action="/jdewit/bootstrap-timepicker/delete/gh-pages/css/bootstrap-timepicker.css" class="inline-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="bjWCGsFkSI668bbPuZJIEketcnf1eB2aSel3ovWx4MXvlg3ChLcqLlhKr3zFO5fQYR9HIkiTcul0nHj22ALNvw==" /></div>
+            <button class="octicon-btn octicon-btn-danger tooltipped tooltipped-n" type="submit" aria-label="Fork this project and delete this file" data-disable-with>
+              <span class="octicon octicon-trashcan"></span>
+            </button>
+</form>    </div>
+
+    <div class="file-info">
+        147 lines (146 sloc)
+        <span class="file-info-divider"></span>
+      3.453 kB
+    </div>
+  </div>
+  
+  <div class="blob-wrapper data type-css">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tr>
+        <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-c">/*!</span></td>
+      </tr>
+      <tr>
+        <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-c"> * Timepicker Component for Twitter Bootstrap</span></td>
+      </tr>
+      <tr>
+        <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-c"> *</span></td>
+      </tr>
+      <tr>
+        <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="LC4" class="blob-code blob-code-inner js-file-line"><span class="pl-c"> * Copyright 2013 Joris de Wit</span></td>
+      </tr>
+      <tr>
+        <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="LC5" class="blob-code blob-code-inner js-file-line"><span class="pl-c"> *</span></td>
+      </tr>
+      <tr>
+        <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-c"> * Contributors https://github.com/jdewit/bootstrap-timepicker/graphs/contributors</span></td>
+      </tr>
+      <tr>
+        <td id="L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="LC7" class="blob-code blob-code-inner js-file-line"><span class="pl-c"> *</span></td>
+      </tr>
+      <tr>
+        <td id="L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="LC8" class="blob-code blob-code-inner js-file-line"><span class="pl-c"> * For the full copyright and license information, please view the LICENSE</span></td>
+      </tr>
+      <tr>
+        <td id="L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="LC9" class="blob-code blob-code-inner js-file-line"><span class="pl-c"> * file that was distributed with this source code.</span></td>
+      </tr>
+      <tr>
+        <td id="L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="LC10" class="blob-code blob-code-inner js-file-line"><span class="pl-c"> */</span></td>
+      </tr>
+      <tr>
+        <td id="L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="LC11" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.bootstrap-timepicker</span> {</td>
+      </tr>
+      <tr>
+        <td id="L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="LC12" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">position</span></span>: <span class="pl-c1">relative</span>;</td>
+      </tr>
+      <tr>
+        <td id="L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="LC13" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="LC14" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.bootstrap-timepicker.pull-right</span> <span class="pl-e">.bootstrap-timepicker-widget.dropdown-menu</span> {</td>
+      </tr>
+      <tr>
+        <td id="L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="LC15" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">left</span></span>: <span class="pl-c1">auto</span>;</td>
+      </tr>
+      <tr>
+        <td id="L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="LC16" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">right</span></span>: <span class="pl-c1">0</span>;</td>
+      </tr>
+      <tr>
+        <td id="L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="LC17" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="LC18" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.bootstrap-timepicker.pull-right</span> <span class="pl-e">.bootstrap-timepicker-widget.dropdown-menu</span><span class="pl-e">:before</span> {</td>
+      </tr>
+      <tr>
+        <td id="L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="LC19" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">left</span></span>: <span class="pl-c1">auto</span>;</td>
+      </tr>
+      <tr>
+        <td id="L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="LC20" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">right</span></span>: <span class="pl-c1">12<span class="pl-k">px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="LC21" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="LC22" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.bootstrap-timepicker.pull-right</span> <span class="pl-e">.bootstrap-timepicker-widget.dropdown-menu</span><span class="pl-e">:after</span> {</td>
+      </tr>
+      <tr>
+        <td id="L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="LC23" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">left</span></span>: <span class="pl-c1">auto</span>;</td>
+      </tr>
+      <tr>
+        <td id="L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td id="LC24" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">right</span></span>: <span class="pl-c1">13<span class="pl-k">px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td id="LC25" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td id="LC26" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.bootstrap-timepicker</span> <span class="pl-e">.add-on</span> {</td>
+      </tr>
+      <tr>
+        <td id="L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td id="LC27" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">cursor</span></span>: <span class="pl-c1">pointer</span>;</td>
+      </tr>
+      <tr>
+        <td id="L28" class="blob-num js-line-number" data-line-number="28"></td>
+        <td id="LC28" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="L29" class="blob-num js-line-number" data-line-number="29"></td>
+        <td id="LC29" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.bootstrap-timepicker</span> <span class="pl-e">.add-on</span> <span class="pl-ent">i</span> {</td>
+      </tr>
+      <tr>
+        <td id="L30" class="blob-num js-line-number" data-line-number="30"></td>
+        <td id="LC30" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">display</span></span>: <span class="pl-c1">inline-block</span>;</td>
+      </tr>
+      <tr>
+        <td id="L31" class="blob-num js-line-number" data-line-number="31"></td>
+        <td id="LC31" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">width</span></span>: <span class="pl-c1">16<span class="pl-k">px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L32" class="blob-num js-line-number" data-line-number="32"></td>
+        <td id="LC32" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">height</span></span>: <span class="pl-c1">16<span class="pl-k">px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L33" class="blob-num js-line-number" data-line-number="33"></td>
+        <td id="LC33" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="L34" class="blob-num js-line-number" data-line-number="34"></td>
+        <td id="LC34" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.bootstrap-timepicker-widget.dropdown-menu</span> {</td>
+      </tr>
+      <tr>
+        <td id="L35" class="blob-num js-line-number" data-line-number="35"></td>
+        <td id="LC35" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">padding</span></span>: <span class="pl-c1">4<span class="pl-k">px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L36" class="blob-num js-line-number" data-line-number="36"></td>
+        <td id="LC36" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="L37" class="blob-num js-line-number" data-line-number="37"></td>
+        <td id="LC37" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.bootstrap-timepicker-widget.dropdown-menu.open</span> {</td>
+      </tr>
+      <tr>
+        <td id="L38" class="blob-num js-line-number" data-line-number="38"></td>
+        <td id="LC38" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">display</span></span>: <span class="pl-c1">inline-block</span>;</td>
+      </tr>
+      <tr>
+        <td id="L39" class="blob-num js-line-number" data-line-number="39"></td>
+        <td id="LC39" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="L40" class="blob-num js-line-number" data-line-number="40"></td>
+        <td id="LC40" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.bootstrap-timepicker-widget.dropdown-menu</span><span class="pl-e">:before</span> {</td>
+      </tr>
+      <tr>
+        <td id="L41" class="blob-num js-line-number" data-line-number="41"></td>
+        <td id="LC41" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">border-bottom</span></span>: <span class="pl-c1">7<span class="pl-k">px</span></span> <span class="pl-c1">solid</span> <span class="pl-c1">rgba</span>(<span class="pl-c1">0, 0, 0, 0.2</span>);</td>
+      </tr>
+      <tr>
+        <td id="L42" class="blob-num js-line-number" data-line-number="42"></td>
+        <td id="LC42" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">border-left</span></span>: <span class="pl-c1">7<span class="pl-k">px</span></span> <span class="pl-c1">solid</span> <span class="pl-c1">transparent</span>;</td>
+      </tr>
+      <tr>
+        <td id="L43" class="blob-num js-line-number" data-line-number="43"></td>
+        <td id="LC43" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">border-right</span></span>: <span class="pl-c1">7<span class="pl-k">px</span></span> <span class="pl-c1">solid</span> <span class="pl-c1">transparent</span>;</td>
+      </tr>
+      <tr>
+        <td id="L44" class="blob-num js-line-number" data-line-number="44"></td>
+        <td id="LC44" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">content</span></span>: <span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L45" class="blob-num js-line-number" data-line-number="45"></td>
+        <td id="LC45" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">display</span></span>: <span class="pl-c1">inline-block</span>;</td>
+      </tr>
+      <tr>
+        <td id="L46" class="blob-num js-line-number" data-line-number="46"></td>
+        <td id="LC46" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">position</span></span>: <span class="pl-c1">absolute</span>;</td>
+      </tr>
+      <tr>
+        <td id="L47" class="blob-num js-line-number" data-line-number="47"></td>
+        <td id="LC47" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="L48" class="blob-num js-line-number" data-line-number="48"></td>
+        <td id="LC48" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.bootstrap-timepicker-widget.dropdown-menu</span><span class="pl-e">:after</span> {</td>
+      </tr>
+      <tr>
+        <td id="L49" class="blob-num js-line-number" data-line-number="49"></td>
+        <td id="LC49" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">border-bottom</span></span>: <span class="pl-c1">6<span class="pl-k">px</span></span> <span class="pl-c1">solid</span> <span class="pl-c1">#FFFFFF</span>;</td>
+      </tr>
+      <tr>
+        <td id="L50" class="blob-num js-line-number" data-line-number="50"></td>
+        <td id="LC50" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">border-left</span></span>: <span class="pl-c1">6<span class="pl-k">px</span></span> <span class="pl-c1">solid</span> <span class="pl-c1">transparent</span>;</td>
+      </tr>
+      <tr>
+        <td id="L51" class="blob-num js-line-number" data-line-number="51"></td>
+        <td id="LC51" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">border-right</span></span>: <span class="pl-c1">6<span class="pl-k">px</span></span> <span class="pl-c1">solid</span> <span class="pl-c1">transparent</span>;</td>
+      </tr>
+      <tr>
+        <td id="L52" class="blob-num js-line-number" data-line-number="52"></td>
+        <td id="LC52" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">content</span></span>: <span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L53" class="blob-num js-line-number" data-line-number="53"></td>
+        <td id="LC53" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">display</span></span>: <span class="pl-c1">inline-block</span>;</td>
+      </tr>
+      <tr>
+        <td id="L54" class="blob-num js-line-number" data-line-number="54"></td>
+        <td id="LC54" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">position</span></span>: <span class="pl-c1">absolute</span>;</td>
+      </tr>
+      <tr>
+        <td id="L55" class="blob-num js-line-number" data-line-number="55"></td>
+        <td id="LC55" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="L56" class="blob-num js-line-number" data-line-number="56"></td>
+        <td id="LC56" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.bootstrap-timepicker-widget.timepicker-orient-left</span><span class="pl-e">:before</span> {</td>
+      </tr>
+      <tr>
+        <td id="L57" class="blob-num js-line-number" data-line-number="57"></td>
+        <td id="LC57" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">left</span></span>: <span class="pl-c1">6<span class="pl-k">px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L58" class="blob-num js-line-number" data-line-number="58"></td>
+        <td id="LC58" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="L59" class="blob-num js-line-number" data-line-number="59"></td>
+        <td id="LC59" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.bootstrap-timepicker-widget.timepicker-orient-left</span><span class="pl-e">:after</span> {</td>
+      </tr>
+      <tr>
+        <td id="L60" class="blob-num js-line-number" data-line-number="60"></td>
+        <td id="LC60" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">left</span></span>: <span class="pl-c1">7<span class="pl-k">px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L61" class="blob-num js-line-number" data-line-number="61"></td>
+        <td id="LC61" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="L62" class="blob-num js-line-number" data-line-number="62"></td>
+        <td id="LC62" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.bootstrap-timepicker-widget.timepicker-orient-right</span><span class="pl-e">:before</span> {</td>
+      </tr>
+      <tr>
+        <td id="L63" class="blob-num js-line-number" data-line-number="63"></td>
+        <td id="LC63" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">right</span></span>: <span class="pl-c1">6<span class="pl-k">px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L64" class="blob-num js-line-number" data-line-number="64"></td>
+        <td id="LC64" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="L65" class="blob-num js-line-number" data-line-number="65"></td>
+        <td id="LC65" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.bootstrap-timepicker-widget.timepicker-orient-right</span><span class="pl-e">:after</span> {</td>
+      </tr>
+      <tr>
+        <td id="L66" class="blob-num js-line-number" data-line-number="66"></td>
+        <td id="LC66" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">right</span></span>: <span class="pl-c1">7<span class="pl-k">px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L67" class="blob-num js-line-number" data-line-number="67"></td>
+        <td id="LC67" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="L68" class="blob-num js-line-number" data-line-number="68"></td>
+        <td id="LC68" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.bootstrap-timepicker-widget.timepicker-orient-top</span><span class="pl-e">:before</span> {</td>
+      </tr>
+      <tr>
+        <td id="L69" class="blob-num js-line-number" data-line-number="69"></td>
+        <td id="LC69" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">top</span></span>: <span class="pl-c1">-7<span class="pl-k">px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L70" class="blob-num js-line-number" data-line-number="70"></td>
+        <td id="LC70" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="L71" class="blob-num js-line-number" data-line-number="71"></td>
+        <td id="LC71" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.bootstrap-timepicker-widget.timepicker-orient-top</span><span class="pl-e">:after</span> {</td>
+      </tr>
+      <tr>
+        <td id="L72" class="blob-num js-line-number" data-line-number="72"></td>
+        <td id="LC72" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">top</span></span>: <span class="pl-c1">-6<span class="pl-k">px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L73" class="blob-num js-line-number" data-line-number="73"></td>
+        <td id="LC73" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="L74" class="blob-num js-line-number" data-line-number="74"></td>
+        <td id="LC74" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.bootstrap-timepicker-widget.timepicker-orient-bottom</span><span class="pl-e">:before</span> {</td>
+      </tr>
+      <tr>
+        <td id="L75" class="blob-num js-line-number" data-line-number="75"></td>
+        <td id="LC75" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">bottom</span></span>: <span class="pl-c1">-7<span class="pl-k">px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L76" class="blob-num js-line-number" data-line-number="76"></td>
+        <td id="LC76" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">border-bottom</span></span>: <span class="pl-c1">0</span>;</td>
+      </tr>
+      <tr>
+        <td id="L77" class="blob-num js-line-number" data-line-number="77"></td>
+        <td id="LC77" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">border-top</span></span>: <span class="pl-c1">7<span class="pl-k">px</span></span> <span class="pl-c1">solid</span> <span class="pl-c1">#999</span>;</td>
+      </tr>
+      <tr>
+        <td id="L78" class="blob-num js-line-number" data-line-number="78"></td>
+        <td id="LC78" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="L79" class="blob-num js-line-number" data-line-number="79"></td>
+        <td id="LC79" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.bootstrap-timepicker-widget.timepicker-orient-bottom</span><span class="pl-e">:after</span> {</td>
+      </tr>
+      <tr>
+        <td id="L80" class="blob-num js-line-number" data-line-number="80"></td>
+        <td id="LC80" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">bottom</span></span>: <span class="pl-c1">-6<span class="pl-k">px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L81" class="blob-num js-line-number" data-line-number="81"></td>
+        <td id="LC81" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">border-bottom</span></span>: <span class="pl-c1">0</span>;</td>
+      </tr>
+      <tr>
+        <td id="L82" class="blob-num js-line-number" data-line-number="82"></td>
+        <td id="LC82" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">border-top</span></span>: <span class="pl-c1">6<span class="pl-k">px</span></span> <span class="pl-c1">solid</span> <span class="pl-c1">#ffffff</span>;</td>
+      </tr>
+      <tr>
+        <td id="L83" class="blob-num js-line-number" data-line-number="83"></td>
+        <td id="LC83" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="L84" class="blob-num js-line-number" data-line-number="84"></td>
+        <td id="LC84" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.bootstrap-timepicker-widget</span> <span class="pl-ent">a</span><span class="pl-e">.btn</span>,</td>
+      </tr>
+      <tr>
+        <td id="L85" class="blob-num js-line-number" data-line-number="85"></td>
+        <td id="LC85" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.bootstrap-timepicker-widget</span> <span class="pl-ent">input</span> {</td>
+      </tr>
+      <tr>
+        <td id="L86" class="blob-num js-line-number" data-line-number="86"></td>
+        <td id="LC86" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">border-radius</span></span>: <span class="pl-c1">4<span class="pl-k">px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L87" class="blob-num js-line-number" data-line-number="87"></td>
+        <td id="LC87" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="L88" class="blob-num js-line-number" data-line-number="88"></td>
+        <td id="LC88" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.bootstrap-timepicker-widget</span> <span class="pl-ent">table</span> {</td>
+      </tr>
+      <tr>
+        <td id="L89" class="blob-num js-line-number" data-line-number="89"></td>
+        <td id="LC89" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">width</span></span>: <span class="pl-c1">100<span class="pl-k">%</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L90" class="blob-num js-line-number" data-line-number="90"></td>
+        <td id="LC90" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">margin</span></span>: <span class="pl-c1">0</span>;</td>
+      </tr>
+      <tr>
+        <td id="L91" class="blob-num js-line-number" data-line-number="91"></td>
+        <td id="LC91" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="L92" class="blob-num js-line-number" data-line-number="92"></td>
+        <td id="LC92" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.bootstrap-timepicker-widget</span> <span class="pl-ent">table</span> <span class="pl-ent">td</span> {</td>
+      </tr>
+      <tr>
+        <td id="L93" class="blob-num js-line-number" data-line-number="93"></td>
+        <td id="LC93" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">text-align</span></span>: <span class="pl-c1">center</span>;</td>
+      </tr>
+      <tr>
+        <td id="L94" class="blob-num js-line-number" data-line-number="94"></td>
+        <td id="LC94" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">height</span></span>: <span class="pl-c1">30<span class="pl-k">px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L95" class="blob-num js-line-number" data-line-number="95"></td>
+        <td id="LC95" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">margin</span></span>: <span class="pl-c1">0</span>;</td>
+      </tr>
+      <tr>
+        <td id="L96" class="blob-num js-line-number" data-line-number="96"></td>
+        <td id="LC96" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">padding</span></span>: <span class="pl-c1">2<span class="pl-k">px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L97" class="blob-num js-line-number" data-line-number="97"></td>
+        <td id="LC97" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="L98" class="blob-num js-line-number" data-line-number="98"></td>
+        <td id="LC98" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.bootstrap-timepicker-widget</span> <span class="pl-ent">table</span> <span class="pl-ent">td</span><span class="pl-e">:not</span>(<span class="pl-e">.separator</span>) {</td>
+      </tr>
+      <tr>
+        <td id="L99" class="blob-num js-line-number" data-line-number="99"></td>
+        <td id="LC99" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">min-width</span></span>: <span class="pl-c1">30<span class="pl-k">px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L100" class="blob-num js-line-number" data-line-number="100"></td>
+        <td id="LC100" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="L101" class="blob-num js-line-number" data-line-number="101"></td>
+        <td id="LC101" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.bootstrap-timepicker-widget</span> <span class="pl-ent">table</span> <span class="pl-ent">td</span> <span class="pl-ent">span</span> {</td>
+      </tr>
+      <tr>
+        <td id="L102" class="blob-num js-line-number" data-line-number="102"></td>
+        <td id="LC102" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">width</span></span>: <span class="pl-c1">100<span class="pl-k">%</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L103" class="blob-num js-line-number" data-line-number="103"></td>
+        <td id="LC103" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="L104" class="blob-num js-line-number" data-line-number="104"></td>
+        <td id="LC104" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.bootstrap-timepicker-widget</span> <span class="pl-ent">table</span> <span class="pl-ent">td</span> <span class="pl-ent">a</span> {</td>
+      </tr>
+      <tr>
+        <td id="L105" class="blob-num js-line-number" data-line-number="105"></td>
+        <td id="LC105" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">border</span></span>: <span class="pl-c1">1<span class="pl-k">px</span></span> <span class="pl-c1">transparent</span> <span class="pl-c1">solid</span>;</td>
+      </tr>
+      <tr>
+        <td id="L106" class="blob-num js-line-number" data-line-number="106"></td>
+        <td id="LC106" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">width</span></span>: <span class="pl-c1">100<span class="pl-k">%</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L107" class="blob-num js-line-number" data-line-number="107"></td>
+        <td id="LC107" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">display</span></span>: <span class="pl-c1">inline-block</span>;</td>
+      </tr>
+      <tr>
+        <td id="L108" class="blob-num js-line-number" data-line-number="108"></td>
+        <td id="LC108" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">margin</span></span>: <span class="pl-c1">0</span>;</td>
+      </tr>
+      <tr>
+        <td id="L109" class="blob-num js-line-number" data-line-number="109"></td>
+        <td id="LC109" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">padding</span></span>: <span class="pl-c1">8<span class="pl-k">px</span></span> <span class="pl-c1">0</span>;</td>
+      </tr>
+      <tr>
+        <td id="L110" class="blob-num js-line-number" data-line-number="110"></td>
+        <td id="LC110" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">outline</span></span>: <span class="pl-c1">0</span>;</td>
+      </tr>
+      <tr>
+        <td id="L111" class="blob-num js-line-number" data-line-number="111"></td>
+        <td id="LC111" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">color</span></span>: <span class="pl-c1">#333</span>;</td>
+      </tr>
+      <tr>
+        <td id="L112" class="blob-num js-line-number" data-line-number="112"></td>
+        <td id="LC112" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="L113" class="blob-num js-line-number" data-line-number="113"></td>
+        <td id="LC113" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.bootstrap-timepicker-widget</span> <span class="pl-ent">table</span> <span class="pl-ent">td</span> <span class="pl-ent">a</span><span class="pl-e">:hover</span> {</td>
+      </tr>
+      <tr>
+        <td id="L114" class="blob-num js-line-number" data-line-number="114"></td>
+        <td id="LC114" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">text-decoration</span></span>: <span class="pl-c1">none</span>;</td>
+      </tr>
+      <tr>
+        <td id="L115" class="blob-num js-line-number" data-line-number="115"></td>
+        <td id="LC115" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">background-color</span></span>: <span class="pl-c1">#eee</span>;</td>
+      </tr>
+      <tr>
+        <td id="L116" class="blob-num js-line-number" data-line-number="116"></td>
+        <td id="LC116" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1">-webkit-<span class="pl-c1">border-radius</span></span>: <span class="pl-c1">4<span class="pl-k">px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L117" class="blob-num js-line-number" data-line-number="117"></td>
+        <td id="LC117" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1">-moz-<span class="pl-c1">border-radius</span></span>: <span class="pl-c1">4<span class="pl-k">px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L118" class="blob-num js-line-number" data-line-number="118"></td>
+        <td id="LC118" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">border-radius</span></span>: <span class="pl-c1">4<span class="pl-k">px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L119" class="blob-num js-line-number" data-line-number="119"></td>
+        <td id="LC119" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">border-color</span></span>: <span class="pl-c1">#ddd</span>;</td>
+      </tr>
+      <tr>
+        <td id="L120" class="blob-num js-line-number" data-line-number="120"></td>
+        <td id="LC120" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="L121" class="blob-num js-line-number" data-line-number="121"></td>
+        <td id="LC121" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.bootstrap-timepicker-widget</span> <span class="pl-ent">table</span> <span class="pl-ent">td</span> <span class="pl-ent">a</span> <span class="pl-ent">i</span> {</td>
+      </tr>
+      <tr>
+        <td id="L122" class="blob-num js-line-number" data-line-number="122"></td>
+        <td id="LC122" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">margin-top</span></span>: <span class="pl-c1">2<span class="pl-k">px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L123" class="blob-num js-line-number" data-line-number="123"></td>
+        <td id="LC123" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">font-size</span></span>: <span class="pl-c1">18<span class="pl-k">px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L124" class="blob-num js-line-number" data-line-number="124"></td>
+        <td id="LC124" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="L125" class="blob-num js-line-number" data-line-number="125"></td>
+        <td id="LC125" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.bootstrap-timepicker-widget</span> <span class="pl-ent">table</span> <span class="pl-ent">td</span> <span class="pl-ent">input</span> {</td>
+      </tr>
+      <tr>
+        <td id="L126" class="blob-num js-line-number" data-line-number="126"></td>
+        <td id="LC126" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">width</span></span>: <span class="pl-c1">25<span class="pl-k">px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L127" class="blob-num js-line-number" data-line-number="127"></td>
+        <td id="LC127" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">margin</span></span>: <span class="pl-c1">0</span>;</td>
+      </tr>
+      <tr>
+        <td id="L128" class="blob-num js-line-number" data-line-number="128"></td>
+        <td id="LC128" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">text-align</span></span>: <span class="pl-c1">center</span>;</td>
+      </tr>
+      <tr>
+        <td id="L129" class="blob-num js-line-number" data-line-number="129"></td>
+        <td id="LC129" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="L130" class="blob-num js-line-number" data-line-number="130"></td>
+        <td id="LC130" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.bootstrap-timepicker-widget</span> <span class="pl-e">.modal-content</span> {</td>
+      </tr>
+      <tr>
+        <td id="L131" class="blob-num js-line-number" data-line-number="131"></td>
+        <td id="LC131" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">padding</span></span>: <span class="pl-c1">4<span class="pl-k">px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L132" class="blob-num js-line-number" data-line-number="132"></td>
+        <td id="LC132" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="L133" class="blob-num js-line-number" data-line-number="133"></td>
+        <td id="LC133" class="blob-code blob-code-inner js-file-line"><span class="pl-k">@media</span> (<span class="pl-c1">min-width</span>: <span class="pl-c1">767<span class="pl-k">px</span></span>) {</td>
+      </tr>
+      <tr>
+        <td id="L134" class="blob-num js-line-number" data-line-number="134"></td>
+        <td id="LC134" class="blob-code blob-code-inner js-file-line">  <span class="pl-e">.bootstrap-timepicker-widget.modal</span> {</td>
+      </tr>
+      <tr>
+        <td id="L135" class="blob-num js-line-number" data-line-number="135"></td>
+        <td id="LC135" class="blob-code blob-code-inner js-file-line">    <span class="pl-c1"><span class="pl-c1">width</span></span>: <span class="pl-c1">200<span class="pl-k">px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L136" class="blob-num js-line-number" data-line-number="136"></td>
+        <td id="LC136" class="blob-code blob-code-inner js-file-line">    <span class="pl-c1"><span class="pl-c1">margin-left</span></span>: <span class="pl-c1">-100<span class="pl-k">px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L137" class="blob-num js-line-number" data-line-number="137"></td>
+        <td id="LC137" class="blob-code blob-code-inner js-file-line">  }</td>
+      </tr>
+      <tr>
+        <td id="L138" class="blob-num js-line-number" data-line-number="138"></td>
+        <td id="LC138" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="L139" class="blob-num js-line-number" data-line-number="139"></td>
+        <td id="LC139" class="blob-code blob-code-inner js-file-line"><span class="pl-k">@media</span> (<span class="pl-c1">max-width</span>: <span class="pl-c1">767<span class="pl-k">px</span></span>) {</td>
+      </tr>
+      <tr>
+        <td id="L140" class="blob-num js-line-number" data-line-number="140"></td>
+        <td id="LC140" class="blob-code blob-code-inner js-file-line">  <span class="pl-e">.bootstrap-timepicker</span> {</td>
+      </tr>
+      <tr>
+        <td id="L141" class="blob-num js-line-number" data-line-number="141"></td>
+        <td id="LC141" class="blob-code blob-code-inner js-file-line">    <span class="pl-c1"><span class="pl-c1">width</span></span>: <span class="pl-c1">100<span class="pl-k">%</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L142" class="blob-num js-line-number" data-line-number="142"></td>
+        <td id="LC142" class="blob-code blob-code-inner js-file-line">  }</td>
+      </tr>
+      <tr>
+        <td id="L143" class="blob-num js-line-number" data-line-number="143"></td>
+        <td id="LC143" class="blob-code blob-code-inner js-file-line">  <span class="pl-e">.bootstrap-timepicker</span> <span class="pl-e">.dropdown-menu</span> {</td>
+      </tr>
+      <tr>
+        <td id="L144" class="blob-num js-line-number" data-line-number="144"></td>
+        <td id="LC144" class="blob-code blob-code-inner js-file-line">    <span class="pl-c1"><span class="pl-c1">width</span></span>: <span class="pl-c1">100<span class="pl-k">%</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="L145" class="blob-num js-line-number" data-line-number="145"></td>
+        <td id="LC145" class="blob-code blob-code-inner js-file-line">  }</td>
+      </tr>
+      <tr>
+        <td id="L146" class="blob-num js-line-number" data-line-number="146"></td>
+        <td id="LC146" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+</table>
+
+  </div>
+
+</div>
+
+<a href="#jump-to-line" rel="facebox[.linejump]" data-hotkey="l" style="display:none">Jump to Line</a>
+<div id="jump-to-line" style="display:none">
+  <form accept-charset="UTF-8" action="" class="js-jump-to-line-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input class="linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" autofocus>
+    <button type="submit" class="btn">Go</button>
+</form></div>
+
+        </div>
+
+      </div><!-- /.repo-container -->
+      <div class="modal-backdrop"></div>
+    </div><!-- /.container -->
+  </div><!-- /.site -->
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+      <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2015 <span title="0.18282s from github-fe125-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-3241a40a58a82e21daef3dd3cdca01bde189158793c1b6f9193fff2b5293cd1d.js"></script>
+      <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github/index-cb9c4ca7d9fbab1bccd75f70d37f02969cac447b07adf3e3b496c311bd2f7f96.js"></script>
+      
+      
+  </body>
+</html>
+
+
+/* start of dashbaord.css for events */
+.event-listing {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ddd;
+  border-radius: 4px;
+  position: relative;
+  display: block;
+}
+
+A.event-listing:hover {
+  text-decoration: none;
+  border: 1px solid #ccc;
+}
+
+.event-listing h2 {
+  font-size: 13pt;
+  margin-top: 1em;
+}
+.event-listing h3 {
+  font-size: 13pt;
+}
+.event-listing h4 {
+  font-size: 13pt;
+  color: #444;
+}
+.event-listing h4>a {
+  color: inherit;
+}
+.event-listing .headers {
+  font-size: 14pt;
+}
+.event-listing .content {
+  margin-top: 10px;
+  text-align: justify;
+  position: relative;
+}
+.event-listing .event-description {
+  max-height: 5em;
+  margin-bottom: 0px;
+}
+
+.event-listing img.type {
+  position: absolute;
+  bottom: 0px;
+}
+
+.fb-like {
+  margin-top: 0px;
+  margin-bottom: -5px;
+}
+
+.event-listing.rejected {
+  min-height: 10px;
+  border-color: #ffaa9b;
+}
+.event-listing.rejected h3 {
+  color: #ffaa9b;
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+}
+.event-listing .alert {
+  margin: 10px 0 0 0;
+}
+
+
+.btn-lg-agora {
+  font-family: "Futura";
+  text-transform: uppercase;
+}
+
+.btn-expand {
+  display: block;
+  width: 100%;
+}
+
+.btn-going {
+  color: white;
+  background-color: #02324a;
+  font-weight: bold;
+  border-style: solid;
+  border-width: 1px;
+}
+a.btn-going:hover {
+  color: white;
+  background-color: #02324a;
+}
+a.btn-agora:hover {
+  color: white;
+  background-color: #1a829f;
+}
+
+.event-listing-striped {
+  background: url("/static/events/images/stripes.f1ca16e7b7fc.png");
+}
+
+.event-listing .panel-heading A {
+  color: #000;
+}
+
+.paginator {
+  text-align: center;
+}
+
+.event-loading-spinner {
+  margin: 0 auto;
+  width: 100px;
+  background-color: #fff;
+  display: block;
+  border: 1px solid #eeeeee;
+  text-align: center;
+  padding: 10px;
+  z-index: 40;
+  border-radius: 4px;
+}
+
+.event-loading-spinner IMG {
+  margin-bottom: 10px;
+}
+
+.event-listing .logo-holder {
+  position: relative;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.event-listing .group-logo {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.event-listing .event-category {
+  color: #888;
+}
+
+.event-listing-right {
+  position: relative;
+  padding-left: 0px;
+}
+
+.event-listing .panel-body {
+  position: relative;
+  padding: 12px;
+  padding-bottom: 0px;
+}
+
+.panel .event-listing {
+  margin-bottom: 15px;
+}
+
+.event-listing-overlay {
+  display: block;
+  position: absolute;
+  opacity: 0.8;
+  background: white;
+  z-index: 1023;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.event-listing .media {
+  position: relative;
+  margin-top: 0px;
+  min-height: 110px;
+}
+
+A.btn-dashboard {
+  cursor: pointer;
+  display: block;
+}
+
+A.btn-dashboard:hover {
+  text-decoration: none;
+}
+
+.dashboard-tabs {
+  height: 30px;
+  margin-bottom: 11px;
+}
+
+.dashboard-tabs>li {
+  float: left;
+  list-style: none;
+}
+
+.dashboard-tabs>li>a {
+  border-radius: 10px 10px 0 0;
+  border: 1px solid #1a829f;
+  background-color: #0e5e8f;
+  color: #000f42;
+  font-family: Futura, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  height: 42px;
+  z-index: 4;
+  margin-right: -5px;
+  font-size: 14pt;
+  position: relative;
+}
+
+.dashboard-tabs>li.active>a {
+  background-color: #22849f;
+  color: #fff;
+  z-index: 5;
+}
+
+.dashboard-tabs-tabspacer {
+  padding: 15px;
+}
+
+.dashboard-panel-with-tabs {
+  border-radius: 0px 4px 4px 4px;
+}
+
+.join-group-popover {
+  position: absolute;
+  bottom: 32px;
+  right: 14px;
+  color: #02324a;
+  text-transform: none;
+  border: 3px solid;
+  text-align: center;
+  display: none;
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.5); /* use box-shadow because of rendering bug on Chrome */
+}
+
+.join-group-popover .btn-join-group-dialog {
+  min-width: 205px;
+}
+
+.join-group-popover .popover-arrow {
+  width: 0px;
+  height: 0px;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-top: 11px solid #02324a;
+  position: absolute;
+  right: 60px;
+  -webkit-filter: drop-shadow(4px 4px 4px rgba(0,0,0,0.5));
+  -webkit-transform: translateZ(0); /* fix for retina blur with webkit filters */
+}
+
+.join-group-popover .panel-close-button A {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  color: #fff;
+  background: #02324a;
+  padding: 2px 4px 1px 4px;
+  border-radius: 15px;
+  font-size: 0.8em;
+}
+
+.join-group-popover .panel-close-button A:hover {
+  background-color: #0A6B99;
+}
+
+.join-group-popover P {
+  margin: 5px 0px 0px 0px;
+}
+
+.join-group-popover .panel-body {
+  padding: 14px;
+}
+
+.join-group-popover .btn-default {
+  color: #fff;
+  background-color: #1281b5;
+}
+
+.join-group-popover .btn-default:hover {
+  background-color: #0A6B99;
+}
+
+.open_closed_lock {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+.group-logo-mobile {
+  float: left;
+  max-width: 30px;
+  max-height: 30px;
+  margin-right: 8px;
+}
+
+@media (max-width: 1200px) {
+  .btn-left {
+    padding: 0px;
+  }
+
+  A.event-role-button {
+    display: inline-block;
+    text-align: center;
+    font-size: 10px;
+    border: 2px solid #1a829f;
+    border-radius: 4px;
+    padding-bottom: 4px;
+  }
+
+  .event-role-button .glyphicon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    font-size: 3em;
+    padding-bottom: 4px;
+  }
+  
+  .event-role-title {
+    margin: 4px;
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .event-listing-outer {
+    position: inherit;
+  }
+
+  /* set relative positioning so that we can get the event join button to be in the correct place relative to the notification bar */
+  .event-listing-inner {
+    position: relative;
+  }
+
+  .notification-bar .close {
+    margin-right: -6px;
+    margin-top: -2px;
+  }
+
+  UL.pagination {
+    margin: 0px;
+  }
+
+  .dashboard-tabs A, .create-event-button {
+    font-size: 12px;
+  }
+
+  .modal-header {
+    font-size: 16px;
+  }
+
+  .create_event_desc_horizontal {
+    margin-top: 0px;
+    margin-right: 10px;
+    font-size: 12px;
+  }
+
+  .dashboard-title-text {
+    margin-top: 0px;
+    font-size: 16px;
+  }
+
+  .event-role-bottom-xs {
+    padding-top: 10px;
+  }
+
+  .dashboard-filter-panel {
+    border: 0px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    margin-bottom: 0px;
+  }
+  
+  .dashboard-filter-panel .panel-body {
+    padding: 0px;
+  }
+
+  .dashboard-calendar-sync-panel {
+    width: 55%;
+    display: inline-block;
+  }
+  
+  .calendar-button {
+    font-size: 12px;
+    padding: 13px 0px;
+  }
+
+  .facebook-promo {
+    width: 40%;
+    display: inline-block;
+    float: right;
+    margin: 0px;
+  }
+
+  .col-xs-remove-padding-right {
+    padding-right: 2px;
+  }
+
+  .col-xs-remove-padding-left {
+    padding-left: 2px;
+  }
+  
+  A.event-role-button {
+    font-size: 8px;
+  }
+
+  .event-num-attendees, .event-category {
+    display: none;
+  }
+
+  .event-listing .event-time {
+    text-align: left;
+    margin-left: 0px;
+  }
+
+  .event-time {
+    margin-top: 12px;
+  }
+
+  .event-listing-right {
+    padding-left: 15px;
+  }
+
+  .event-listing .event-join-button {
+    position: absolute;
+    width: 80px;
+    right: 0px;
+    bottom: 0px;
+    border-color: #02324a;
+  }
+
+  .event-listing {
+    margin-left: -6px;
+    margin-right: -6px;
+  }
+
+  .event-listing .panel-body {
+    padding: 8px;
+    padding-bottom: 0px;
+  }
+}
+
+.event-dashboard-header A {
+  color: #167088;
+}
+
+#organiser .organised-by-user-for-group {
+  font-size: 10pt;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+}
+
+.event-panel-body .event-organiser-group-description {
+  min-height: 60px;
+}
+
+H3.event-time-date {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  margin-bottom: 22px;
+  margin-top: 22px;
+}
+
+H4.event-location {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+
+#tickets.tab-pane H3 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  margin-bottom: 6px;
+  margin-top: 22px;
+}
+
+@keyframes placeHolderShimmer{
+    0%{
+        background-position: -800px 0
+    }
+    100%{
+        background-position: 800px 0
+    }
+}
+
+.event-listing-placeholder {
+  background-color: #eeeeee;
+}
+
+.animated-background {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: linear-gradient(to right,  #eeeeee 8%,#dddddd 18%,#eeeeee 33%);
+    background-repeat: no-repeat;
+    background-size: 1600px 104px;
+    height: 86px;
+    position: relative;
+}
+
+.background-masker {
+    background: #fff;
+    position: absolute;
+}
+
+/* Every thing below this is just positioning */
+
+.background-masker.header-top,
+.background-masker.header-bottom,
+.background-masker.subheader-bottom {
+    top: 0;
+    left: 80px;
+    right: 0;
+    height: 10px;
+}
+
+.background-masker.header-left,
+.background-masker.subheader-left,
+.background-masker.header-right,
+.background-masker.subheader-right {
+    top: 10px;
+    left: 80px;
+    height: 8px;
+    width: 10px;
+}
+
+.background-masker.header-bottom {
+    top: 18px;
+    height: 6px;
+}
+
+.background-masker.subheader-left,
+.background-masker.subheader-right {
+    top: 24px;
+    height: 6px;
+}
+
+
+.background-masker.header-right,
+.background-masker.subheader-right {
+    width: auto;
+    left: 400px;
+    right: 0;
+}
+
+.background-masker.header-right {
+  right: 100px;
+}
+
+.background-masker.subheader-right {
+    left: 230px;
+}
+
+.background-masker.subheader-bottom {
+    top: 30px;
+    height: 10px;
+}
+
+.background-masker.content-top,
+.background-masker.content-second-line,
+.background-masker.content-third-line,
+.background-masker.content-second-end,
+.background-masker.content-third-end,
+.background-masker.content-first-end {
+    top: 40px;
+    left: 80px;
+    right: 0;
+    height: 6px;
+}
+
+.background-masker.content-second-start,
+.background-masker.content-third-start,
+.background-masker.content-first-start {
+    left: 80px;
+    height: 10px;
+    width: 10px;
+    top: 40px;
+}
+
+.background-masker.content-top {
+    height:30px;
+}
+
+.background-masker.content-first-end,
+.background-masker.content-second-end,
+.background-masker.content-third-end{
+    width: auto;
+    left: 380px;
+    right: 0;
+    top: 70px;
+    height: 10px;
+}
+
+.background-masker.content-first-start {
+  top: 70px;
+}
+
+.background-masker.content-first-end {
+  right: 70px;
+}
+
+.background-masker.content-second-line  {
+    top: 80px;
+}
+
+.background-masker.content-second-start {
+  top: 74px;
+}
+
+.background-masker.content-second-end {
+    left: 420px;
+    top: 74px;
+}
+
+.background-masker.content-third-line {
+    top: 82px;
+}
+
+.background-masker.content-third-start {
+  top: 88px;
+}
+
+.background-masker.content-third-end {
+    left: 300px;
+    top: 88px;
+}
+
+.event-dashboard-header {
+  position: fixed;
+  width: 100%;
+  z-index: 900;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 3px 24px -1px rgba(0,0,0,0.45);
+  -moz-box-shadow: 0px 3px 24px -1px rgba(0,0,0,0.45);
+  box-shadow: 0px 3px 24px -1px rgba(0,0,0,0.45);
+}
+
+.event-dashboard-header > .content {
+  text-align: center;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 6px;
+}
+
+.event-dashboard-header > .content > .top {
+  font-size: 1.6em;
+}
+
+.event-dashboard-header > .content > A {
+  text-decoration: underline;
+}
+
+.event-dashboard-header.menu-open .modeMenu {
+  height: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.event-dashboard-header .modeMenu {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+}
+
+.event-dashboard-header > .content > .modeMenu A {
+  padding: 0px 5px;
+  margin: 0px 15px;
+}
+
+.event-dashboard-header > .content > .modeMenu INPUT  {
+  width: 400px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #1f1a17;
+  max-width: 100%;
+}
+
+
+.event-dashboard-header > .content > .modeMenu A:hover {
+  text-decoration: none;
+  border-bottom: 2px solid black;
+}
+
+.event-dashboard-header > .content > .modeMenu A:focus {
+  text-decoration: none;
+}
+
+.event-dashboard-header > .content > .modeMenu A.active {
+  border-bottom: 2px solid #8EACFF;
+}
+
+
+.event-dashboard {
+  margin-top: 90px;
+  margin-bottom: 60px;
+}
+
+.event-dashboard H2 {
+  margin-top: 10px;
+  margin-bottom: 14px;
+  font-weight: 200;
+  font-size: 18pt;
+  color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.event-dashboard .create-event-button {
+  position: relative;
+}
+
+.event-listing {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ddd;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.event-listing .content {
+  margin-top: 10px;
+  text-align: justify;
+  position: relative;
+}
+
+.event-listing H4, .event-listing H4 > A {
+  color: #1f1a17;
+  font-size: 17pt;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: normal;
+  margin: 0px;
+}
+
+.event-time {
+  color: #1f1a17;
+  font-size: 13pt;
+  line-height: 2.1;
+  margin: 0px;
+  margin-left: 14px;
+}
+
+.event-listing .event-organiser, .event-listing .event-organiser > A {
+  color: #1f1a17;
+  text-transform: uppercase;
+}
+
+.event-listing .event-description {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-height: 5em;
+  padding-top: 10px;
+  margin: 0px;
+}
+
+.event-listing .event-logo {
+  max-width: 80px;
+  max-height: 80px;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: 16px;
+}
+
+.event-listing .event-join-button {
+  min-width: 80px;
+  top: -10px;
+  margin-left: 15px;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .event-join-button {
+    font-size: 10px !important;
+  }
+
+  .event-listing.panel {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .event-listing .event-logo {
+    max-width: 60px;
+    max-height: 60px;
+  }
+
+  .event-listing .logo-holder{
+    min-height: 60px;
+    width: 60px;
+  }
+
+  .event-listing H4, .event-listing H4 > A {
+    font-size: 13pt;
+  }
+
+  .event-dashboard {
+    margin-top: 60px;
+  }
+
+  .event-dashboard-header > .content > .top {
+    font-size: 1.2em;
+  }
+}
+
+.ticket-type-formset {
+  border-top: 2px solid #ccc;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.ticket-type-formset:first-child {
+  border-top: none;
+  margin-top: inherit;
+  padding-top: inherit;
+}
+
+BODY {
+  background-color: #ddd;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center bottom;
+}
+
+.event-panel.event-panel-darkblue {
+  background-color: #1c2d4b;
+}
+
+.event-panel.event-panel-grey {
+  background-color: #ededed;
+}
+
+.event-panel HR {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 3px solid rgba(204, 204, 204, 0.47);
+  margin: 1em 0;
+  padding: 0; 
+}
+
+.event-panel {
+  color: #fff;
+  position: relative;
+}
+
+.event-panel-top {
+  position: relative;
+}
+
+.event-panel-header {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  /*margin-top: -60px;*/
+  z-index: 2;
+  /*height: 60px;*/
+  bottom: 0px;
+  width: 100%;
+}
+
+.event-panel-header H1 {
+  padding-right: 130px;
+  font-size: 26px;
+  text-transform: uppercase;
+  padding: 6px 0px;
+  margin: 0px;
+  max-height: 60px;
+}
+
+.event-visibility {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  position: relative;
+  top: -15px;
+  left: 15px;
+}
+
+.event-panel-body, .event-panel-header {
+  padding: 10px 15px;
+}
+
+.event-panel-body {
+  padding-bottom: 40px;
+}
+
+.event-panel-top .event-logo {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  border: 1px solid #eee;
+  background: #fff;
+  vertical-align: middle;
+  text-align: center;
+  padding: 5px;
+  z-index: 100;
+  -webkit-box-shadow: 0px 0px 21px -1px rgba(0,0,0,0.45);
+  -moz-box-shadow: 0px 0px 21px -1px rgba(0,0,0,0.45);
+  box-shadow: 0px 0px 21px -1px rgba(0,0,0,0.45);
+}
+
+.event-panel-top .event-logo-wrapper {
+  height: 108px;
+  width: 108px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.event-panel-top .event-logo IMG {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.event-panel-top .event-logo .event-logo-hover {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(255,255,255,0.8);
+}
+
+.event-panel-top .event-logo .event-logo-hover-button {
+  width: 120px;
+  height: 120px;
+  display: table-cell;
+  vertical-align: bottom;
+  padding: 10px;
+  text-align: center;
+}
+
+.event-panel-top .event-logo .event-logo-hover-button:hover {
+  text-decoration: none;
+}
+
+.event-panel-top .event-logo .event-logo-hover-button .glyphicon {
+  display: block;
+  margin: 30px auto;
+  font-size: 20px;
+}
+
+.event-panel-darkblue .event-panel-header H1,
+.event-panel-darkblue .event-panel-header H2,
+.event-panel-darkblue .event-panel-header A
+{
+  color: #1c2d4b;
+}
+
+.event-panel-grey .event-panel-header H1,
+.event-panel-grey .event-panel-header H2,
+.event-panel-grey .event-panel-header A
+{
+  color: #000;
+}
+
+/*.event-panel .event-panel-header H1,*/
+.event-panel .event-panel-header H2,
+.event-panel .event-panel-header A {
+  margin: 0px 0px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.event-panel-header H2 {
+  padding-top: 6px;
+  font-size: 12pt;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 200;
+}
+
+.event-info-tabs {
+  border: none;
+  background-color: #fff;
+}
+
+.event-info-tabs > LI > A
+{
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.event-info-tabs.nav > li > a {
+  padding: 14px 15px;
+}
+
+.event-info-tabs > LI > A > SPAN {
+  border-bottom: 2px solid #eeeeee;
+}
+
+.event-info-tabs > LI.active > A > SPAN {
+  border-bottom: 2px solid #72CCDB;
+}
+.event-info-tabs > LI > A:hover > SPAN {
+  border-bottom: 2px solid #000;
+}
+
+.event-info-tabs.nav > li > a:hover, .nav.event-info-tabs > li > a:focus {
+  background-color: inherit;
+}
+
+.event-info-tab-content {
+  color: #000;
+}
+.event-info-tab-content P {
+  text-align: justify;
+}
+
+
+
+UL.event-tickets {
+  padding: 10px 0px;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+UL.event-tickets > LI {
+  display: block;
+  background-color: #fff;
+  margin: 10px 0px;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+UL.event-tickets > LI .btn {
+  margin: -10px 0px -10px 0px;
+  text-transform: uppercase;
+}
+
+UL.event-tickets > LI .price {
+  margin-right: 10px;
+}
+
+UL.event-tickets > LI .glyphicon {
+  top: -6px;
+}
+
+.event-panel-body .ticket-sale-disclaimer {
+  color: #aaa;
+  font-size: 10pt;
+}
+
+.event-panel-body .tab-panel > H4 {
+  margin-top: 16px;
+}
+
+.event-panel-body HR {
+  margin: 10px 0px;
+}
+
+.event-panel {
+  margin-bottom: 70px;
+  margin-top: 30px;
+}
+
+.event-panel-message {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 20px;
+}
+
+.event-panel-message A {
+  color: #fff;
+}
+
+.event-cancelled, .event-passed, .event-not-live {
+  background-color: #7a0001;
+}
+
+.event-invited {
+  background-color: #005826;
+}
+
+.event-info {
+  background-color: #2e4a72;
+}
+
+.event-info P {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.event-ticket-info {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.event-panel-body {
+  color: #fff;
+  padding-top: 0px;
+}
+
+.event-coverphoto {
+  position: relative;
+}
+
+.event-edit-join-button {
+  position: relative;
+  top: -6px;
+}
+
+.btn-event-coverphoto-upload {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+@media (min-width: 992px) {
+  .event-coverphoto {
+    min-height: 220px;
+  }
+}
+@media (min-width: 1200px) {
+  .event-coverphoto {
+    min-height: 223px;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .event-panel-header {
+    position: inherit;
+    text-align: center;
+  }
+
+  .event-panel {
+    margin-top: 0px;
+  }
+
+  .event-panel H3.event-time-date {
+    font-size: 15px;
+  }
+}
+
+BODY {
+  background-size: cover;
+  background-position: center center;
+}
+
+H1, H2, H3 {
+  margin-top: 14px;
+  margin-bottom: 6px;
+}
+
+.pre-login-logo {
+  text-align: center;
+}
+
+.pre-login-logo IMG {
+  max-height: 160px;
+  max-width: 160px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.pre-login-title h1 {
+  margin-bottom: 10px;
+}
+
+.pre-login-title H2 {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.pre-login-title H3, .event-limited-info P {
+  font-family: "Helvetica Neue",'Josefin Sans',Helvetica,Arial,sans-serif;
+  font-weight: 100;
+}
+
+.pre-login-desc {
+  background-color: white;
+  min-height: 8em;
+  width: 100%;
+  margin: 2em 0;
+  padding: 1.2em 1.4em;
+  text-align: justify;
+  border-radius: 5px;
+}
+
+.event-unavailable-message {
+  text-align: center;
+  color: #fff;
+  background-color: #7a0001;
+}
+
+.event-unavailable-message {
+  margin: 10px 0px;
+  text-transform: uppercase;
+}
+
+.event-unavailable-message H3 {
+  padding: 10px;
+}
+
+.event-details-panel {
+  background-color:rgba(28,45,75,0.8);
+  padding: 40px 0px;
+  color: #fff;
+}
+
+.btn-login, a.btn-login:focus {
+  color: #fff;
+  background-color: inherit;
+  margin: 20px 0px 4px 0px;
+  border: 2px solid #fff;
+}
+a.btn-login:hover {
+  color: #ddd;
+  border-color: #ddd;
+  background-color: inherit;
+}
+
+.event-limited-info P {
+  font-size: 20px;
+}
+
+@media (max-width: 800px) {
+  .pre-login-title H1 {
+    font-size: 26px;
+  }
+  .pre-login-title H2 {
+    font-size: 16px;
+  }
+  .pre-login-title H3, .event-limited-info P, .event-unavailable-message H3 {
+    font-size: 16px;
+  }
+
+  .pre-login-logo IMG {
+    max-height: 80px;
+    max-width: 80px;
+  }
+
+  .event-details-panel {
+    padding: 20px 0px;
+  }
+}
+
+
+@media screen {
+.print-only {
+  display: none;
+}
+}
+
+@media print {
+.screen-only {
+  display: none;
+}
+
+body {
+  font-size: large;
+}
+
+h2 {
+  font-size: 14pt;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: black;
+  text-align: left;
+  margin-top: 0.4em;
+  margin-bottom: 0.2em;
+  padding-left: 10px;
+}
+
+p {
+  padding-left: 10px;
+}
+
+.print-header {
+  margin-top: -60px;
+}
+.print-header h1 {
+  font-size: 3em;
+  margin: 0;
+}
+.print-header h1 .event-type {
+  font-size: 0.6em;
+  margin: 0;
+}
+.print-header h1 .event-role {
+  text-transform: uppercase;
+  font-size: 0.6em;
+  margin: 0;
+  text-align: right;
+  margin-top: 20px;
+}
+
+table.table.tableprint {
+  border-style: none;
+  font-size: 12pt;
+  padding: 0;
+}
+table.table.tableprint thead {
+  border-style: none;
+  text-transform: uppercase;
+}
+table.table.tableprint tbody {
+  border-style: none;
+}
+
+.break {
+  page-break-before: always;
+}
+
+.print-spacer {
+  height: 10px;
+}
+
+#pub_map {
+  margin-top: 10px;
+}
+#pub_map span {
+  display: none;
+}
+
+}
+
+.btn-accept, .btn-decline {
+  font-family: Futura, sans-serif;
+  color: #fff;
+}
+
+.btn-accept:hover, .btn-decline:hover {
+  color: #ccc;
+}
+
+.btn-accept.active, .btn-decline.active {
+  border: 1px solid #000;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,0.25);
+  box-shadow: inset 0 3px 5px rgba(0,0,0,0.25);
+}
+
+.btn-accept {
+  background-color: #005826;
+}
+.btn-decline {
+  background-color: #7a0001;
+}
+
+.handle-invite-panel {
+  padding-bottom: 15px;
+}
+
+.invite-response-field {
+  min-height: 100px;
+  display: none;
+}
+
+.make-event-live-link {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.event-num-attendees {
+  background-color: #2e4a72;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: 14px;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+}
+
+.event-num-attendees SPAN {
+  display: block;
+  font-size: 40pt;
+}
+
+.event-logo-edit {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(255,255,255,0.8);
+}
+
+.event-logo-edit-button {
+  width: 120px;
+  height: 120px;
+  display: table-cell;
+  vertical-align: bottom;
+  padding: 10px;
+  text-align: center;
+}
+
+.event-logo-edit-button:hover {
+  text-decoration: none;
+}
+
+.event-logo-edit-button .glyphicon {
+  display: block;
+  margin: 30px auto;
+  font-size: 20px;
+}
+
+/* OLD CSS BELOW */
+
+
+
+.event-statistic-container {
+  width: auto;
+}
+.event-statistic {
+  display: inline-block;
+  height: 140px;
+}
+
+.modal-content {
+  color: black;
+}
+
+.glyphicon-3x {
+  font-size: 42pt;
+  margin-bottom: 0.1em;
+}
+.btn-cancel  { color:white; background-color: #d9534f; }
+.btn-change  { color:white; background-color: #00baff; }
+.btn-message { color:white; background-color: #97d9e2; }
+
+textarea {
+  resize: none;
+}
+
+.tile-center {
+  text-align: center;
+}
+
+table.agora-table {
+  margin: 0;
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+}
+table.agora-table thead {
+  color: black;
+  background-color: white;
+  text-transform: uppercase;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+table.agora-table thead>tr>td {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+table.agora-table td {
+  font-size: 1.2em;
+}
+table.agora-table>tbody>tr>td {
+  border-style: none;
+}
+table.agora-table>tbody>tr:nth-child(odd)>td { 
+  background-color: rgb(0, 108, 133);
+}
+
+table.agora-table.no-border {
+  border-style: none;
+}
+
+.btn-invite-more {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.6em;
+  border-style: solid;
+  border-color: white;
+}
+
+.block-invite {
+  padding: 0.8em 1.2em;
+  border-bottom: 5px solid #fff;
+}
+.block-invite p {
+  text-align: justify;
+}
+.block-invite textarea {
+  height: 8em;
+}
+
+.respond-button-container {
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.btn-manage-event {
+  width: 100%;
+}
+
+table.past-actions-table A {
+  color: #329FE7;
+}
+
+table.past-actions-table .date-col {
+  width: 200px;
+}
+
+#message-attendees-modal label {
+  text-transform: none;
+}
+
+TEXTAREA.placeholder {
+  color: #ccc;
+}
+
+.event-manage A {
+  color: #329FE7;
+}
+
+@media (max-width: 550px) {
+  .btn-event-page {
+    border-width: 2px;
+    font-size: 10px;
+  }
+
+  .event-join-button {
+    font-size: 20px;
+  }
+
+  .btn-manage-event .glyphicon {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .btn-invite-more {
+    font-size: 14px;
+    margin: 0px;
+  }
+
+  .btn-manage-event {
+    text-align: center;
+    padding: 6px;
+  }
+
+  .btn-manage-event .glyphicon {
+    margin-left: -1px;
+  }
+}
+
+.widget_header {
+	height: 3.2em;
+	box-shadow: 0em 0.1625em 0.1875em 0em #888888;
+	position: relative;
+	z-index: 10;
+}
+
+.group_widget_header_height {
+	height: 5.3em;
+}
+
+.widget_title {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1.7em;
+	padding-top: 0.4em;
+	padding-left: 0.7em;
+	color: #fff;
+}
+
+.widget_group_title {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	font-size: 1.7em;
+	padding-top: 0.3em;
+	padding-left: 0.7em;
+	color: #fff;
+}
+
+.widget_group_default_title {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	font-size: 2em;
+	padding-top: 0.6em;
+	padding-left: 0.7em;
+	color: #fff;
+}
+
+.widget_subtitle {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	padding-top: 0.4em;
+	padding-left: 0.7em;
+	color: #fff;
+}
+
+.center {
+	text-align: center;
+}
+
+.agora_notice {
+	position: absolute;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	bottom: 0.3em;
+	right: 0.4em;
+}
+
+.agora {
+	font-family: 'Didact Gothic', sans-serif;
+	font-weight: 700;
+	font-size: 1em;
+}
+
+.event_container {
+	display: block;
+	background-color: white;
+	height: 8.125em;
+	position: relative;
+	border-width: 0.0625em;
+	border-bottom: 0.0625em #AEAEAE solid;
+}
+
+/* Disabled for now, will need to apply via a parent class to make apply this style in a safer way */
+/*.date {*/
+	/*display: inline-block;*/
+	/*width: 4.375em;*/
+	/*height: 5.8em;*/
+	/*margin: 1em 0.5em 0em 1.3em;*/
+	/*background: #5E5E5E;*/
+	/*text-align: center;*/
+	/*font-family: 'Open Sans', sans-serif;*/
+	/*font-weight: 300;*/
+	/*position: relative;*/
+/*}*/
+
+/*.date .month {*/
+	/*background: #fff;*/
+	/*display: block;*/
+	/*padding: 0.05em 0;*/
+	/*color: #5E5E5E;*/
+	/*font-size: 1.75em;*/
+	/*border: 0.12em solid #5E5E5E;*/
+/*}*/
+
+/*.date .day {*/
+	/*display: block;*/
+	/*font-size: 1.75em;*/
+	/*color: #fff;*/
+/*}*/
+
+.event_container .event_details {
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+	width: auto;
+	padding-right: 9em;
+	position: absolute;
+	float: left;
+    top : 50%;
+    -webkit-transform: translate(0%, -50%);
+    transform        : translate(0%, -50%);
+}
+
+.event_title {
+	font-weight: 700;
+	font-size: 1.25em;
+	padding-bottom: 0.7em;
+	max-height: 3.6em;
+	color: black;
+}
+
+.group_event_title {
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+	width: auto;
+	position: absolute;
+	float: left;
+    top : 50%;
+    -webkit-transform: translate(0%, -50%);
+    transform        : translate(0%, -50%);
+    font-weight: 100;
+	font-size: 2em;
+	max-height: 3em;
+	padding-left: 0.5em;
+	padding-right: 2em;
+	color: black;
+}
+
+.event_owner{
+	font-weight: 300;
+	font-size: 1em;
+	max-height: 2em;
+	color: black;
+}
+
+.widget_image_container {
+  	display: block;
+  	float: right;
+  	position: absolute;
+  	right: 0%;
+  	margin-right: 1.5em;
+    top : 50%;
+    -webkit-transform: translate(0%, -50%);
+    transform        : translate(0%, -50%);
+}
+
+.widget_logo {
+	box-shadow: 0em 0em 0.1875em 0.0625em #888888;
+	z-index: -1;
+	width: 6.25em;
+}
+
+.widget_footer {
+	height: 2.25em;
+	background: #67ACE5;
+	box-shadow: 0em -0.25em 0.187em 0em #888888;
+	position: relative;
+}
+
+.group_widget_footer_height {
+	height: 3.2em;
+}
+
+.widget_login {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	float: left;
+	padding-top: 0.4em;
+	margin-left: 1.125em;
+	color: #fff;
+}
+
+.agora_site_link {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	float: right;
+	padding-top: 0.4em;
+	padding-right: 0.25em;
+	color: #fff;
+}
+/* stil below were global, need changing if they are to be used */
+/*a, a:hover, a:visited, a:link, a:active*/
+/*{*/
+    /*text-decoration: none;*/
+/*}*/
+
+.bar, .footer_text a {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1.2em;
+	padding-top: 0.4em;
+	float: right;
+	padding-right: 0.4em;
+	color: #fff;
+}
+
+.no_upcoming_events {
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	float: left;
+    top : 50%;
+    -webkit-transform: translate(0%, -50%);
+    transform        : translate(0%, -50%);
+    font-weight: 100;
+	font-size: 2em;
+	max-height: 4em;
+	color: black;
+}
+
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+.multistage-fieldsets-wrapper {
+  position: relative;
+}
+
+#create-event-form {
+  min-width: 400px;
+  margin: 50px auto;
+  position: relative;
+}
+
+#create-event-form H2,
+#create-event-form .navigation-buttons {
+  text-align: center;
+}
+
+#create-event-form fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 3px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+  
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0 10%;
+  
+  position: absolute;
+  top: 0px;
+  left: 200%;
+}
+
+
+#create-event-form fieldset.active {
+  position: inherit;
+  left: inherit;
+}
+
+/*Hide all except first fieldset*/
+#create-event-form fieldset:not(:first-of-type) {
+  display: none;
+}
+/*inputs*/
+
+#create-event-form input, #create-event-form textarea {
+  /*border-radius: 3px;*/
+  font-family: montserrat;
+  font-size: 13px;
+}
+
+/*buttons*/
+#create-event-form .action-button {
+  width: 100px;
+  background: #27AE60;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+#create-event-form .action-button:hover, #create-event-form .action-button:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+/*headings*/
+.fs-title {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #2C3E50;
+  margin-bottom: 10px;
+}
+.fs-subtitle {
+  text-align:center;
+  font-weight: normal;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 20px;
+}
+/*progressbar*/
+#progressbar {
+  text-align: center;
+  margin-bottom: 30px;
+  overflow: hidden;
+  /*CSS counters to number the steps*/
+  counter-reset: step;
+}
+#progressbar li {
+  list-style-type: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 9px;
+  width: 33.3%;
+  float: left;
+  position: relative;
+}
+#progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 20px;
+  line-height: 20px;
+  display: block;
+  font-size: 10px;
+  color: #333;
+  background: white;
+  border-radius: 3px;
+  margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: white;
+  position: absolute;
+  left: -50%;
+  top: 9px;
+  z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+  /*connector not needed before the first step*/
+  content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+  background: #27AE60;
+  color: white;
+}
+
+#create-event-form h2,
+#create-event-form h3,
+#create-event-form h4,
+#create-event-form h5 {
+  font-size: 20px;
+  text-align: center;
+}
+
+#create-event-form h5 {
+  color: white;
+}
+
+
+.panel-heading {
+  font-family: montserrat, arial, verdana;
+  font-size: 14px;
+}
+
+.top5 { margin-top:5px; }
+.top7 { margin-top:7px; }
+.top10 { margin-top:10px; }
+.top15 { margin-top:15px; }
+.top17 { margin-top:17px; }
+.top30 { margin-top:30px; }
+
+.bottom5 { margin-bottom:5px; }
+.bottom7 { margin-bottom:7px; }
+.bottom10 { margin-bottom:10px; }
+.bottom15 { margin-bottom:15px; }
+.bottom17 { margin-bottom:17px; }
+.bottom30 { margin-bottom:30px; }
+
+.help-block {
+  text-align: left;
+}
+
+.stretch-up {
+  height: 45px;
+  line-height: 45px;
+}
+
+#listContainer{
+  margin-top:15px;
+}
+ 
+#expList ul, #expList li, #expList div {
+    list-style: none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+}
+#expList p {
+    margin:0;
+    display:block;
+}
+#expList p:hover {
+    background-color:#121212;
+}
+#expList li, #expList div {
+    line-height:140%;
+    text-indent:0px;
+    background-position: 1px 8px;
+    background-repeat: no-repeat;
+}
+#create-event-form .selectize-control.multi .selectize-input [data-value] {
+  text-shadow: 0 1px 0 rgba(0, 51, 83, 0.3);
+  background-color: #1b9dec;
+  background-image: -moz-linear-gradient(top, #1da7ee, #178ee9);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#1da7ee), to(#178ee9));
+  background-image: -webkit-linear-gradient(top, #1da7ee, #178ee9);
+  background-image: -o-linear-gradient(top, #1da7ee, #178ee9);
+  background-image: linear-gradient(to bottom, #1da7ee, #178ee9);
+  background-repeat: repeat-x;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1da7ee', endColorstr='#ff178ee9',GradientType=0);-webkit-box-shadow:0 1px 0 rgba(0,0,0,0.2),inset 0 1px rgba(255,255,255,0.03);box-shadow:0 1px 0 rgba(0,0,0,0.2),inset 0 1px rgba(255,255,255,0.03)}
+#create-event-form .selectize-control.multi .selectize-input>div{padding:2px 6px;margin:0 3px 3px 0;color:#fff;cursor:pointer;background:#1da7ee;border:1px solid #0073bb}
