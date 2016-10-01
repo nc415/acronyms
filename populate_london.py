@@ -20,9 +20,10 @@ with open('london.csv', 'r') as csvfile:
 			
 
 		def add_society(society_name, society_acronym, society_email, society_email_status, site_name, university_name ) :
+			
 			try:
 				Sit=Site.objects.get(site_name=site_name)
-				Uni=University.objects.get_or_create(university_name=university_name)
+				Uni=University.objects.get(university_name=university_name)
 				print (society_email_status)
 				c=Society.objects.get_or_create(site=Sit, society_name=society_name, society_acronym=society_acronym, society_email=society_email ,  university=Uni, society_email_status=society_email_status)[0]
 				return c
