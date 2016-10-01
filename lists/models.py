@@ -68,6 +68,7 @@ class Society(models.Model):
 	CONTACT_STATUS_CHOICES =(
 		('1', 'Whitelist'),
 		('2', 'Blacklist'),
+		('3', 'Neutral'),
 		)
 	society_contact_status=models.CharField(max_length=1, choices=CONTACT_STATUS_CHOICES)
 	society_slug = models.SlugField(blank=True, unique=True)
