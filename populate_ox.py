@@ -7,7 +7,7 @@ from lists.models import Society, University, Site
 from datetime import datetime
 import csv 
 
-with open('london.csv', 'r') as csvfile:
+with open('ox.csv', 'r') as csvfile:
 	societyreader=csv.reader(csvfile, delimiter=',', quotechar='|')
 	
 	for row in societyreader:
