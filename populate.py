@@ -21,7 +21,7 @@ with open('camb.csv', 'r') as csvfile:
 
 		def add_society(society_name, society_acronym, society_email, society_email_status ) :
 			try:
-				Uni=University.objects.get(pk=4)
+				Uni=University.objects.get(pk=1)
 				print (society_email_status)
 				c=Society.objects.get_or_create(society_name=society_name, society_acronym=society_acronym, society_email=society_email ,  university=Uni, society_email_status=society_email_status)[0]
 				return c
