@@ -2,13 +2,14 @@ from django.contrib import admin
 from django.contrib.admin.views.main import ChangeList
 
 from advanced_filters.admin import AdminAdvancedFiltersMixin
-from lists.models import University, Society, EmailHistory, Acronyms, Site
+from lists.models import University, Society, EmailHistory, Acronyms, Site, Translation
 # Register your models here.
 # Register your models here.
     
 class AcronymsAdmin(admin.ModelAdmin):
 	list_display=('name','name_only')
-
+class TranslationAdmin(admin.ModelAdmin):
+	list_display=('translation_item',)
 class SiteAdmin(admin.ModelAdmin):
 	list_display=('site_name',)
 class UniversityAdmin(admin.ModelAdmin):
@@ -52,6 +53,7 @@ admin.site.register(University, UniversityAdmin)
 admin.site.register(Society, SocietyAdmin)
 admin.site.register(Acronyms, AcronymsAdmin)
 admin.site.register(Site, SiteAdmin)
+admin.site.register(Translation, TranslationAdmin)
 #admin.site.register(EmailHistory, EmailHistoryAdmin)
 
 

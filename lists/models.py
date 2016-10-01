@@ -13,6 +13,10 @@ class Acronyms(models.Model):
 	def __str__(self):
 			return self.name
 
+class Translation(models.Model):
+	translation_item=models.CharField(max_length=500)
+	
+
 class Site(models.Model):
 	site_name=models.CharField(max_length=200, unique=True)
 	def __str__(self):

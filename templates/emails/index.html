@@ -2,9 +2,9 @@
 {% block content %}
 
 <div class="row">
-	<div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+	<div class="col-sm-12 col-md-5  col-lg-offset-1 col-lg-5 ">
 		<div class="indexcontainer">
-			<h1 align="center"> Cambridge Acronym Directory </h1>
+			<h1 align="center"> Society Acronyms </h1>
 			<h4 align="center"> Type the acronym of a Cambridge society </h4>
 					{% if Acronym %}
 					<select id="select-name" placeholder="Select a person..." >
@@ -16,7 +16,26 @@
 				<form role="form" id="contacts">
                 	<input type="submit" value="See events" class="btn btn-info btn-block"></form>
 					{% else%}
-					<strong> There are no friends in my list. </strong>
+					<strong> There are no societies loaded</strong>
+				{% endif %}
+			
+		</div>
+	</div>
+
+	<div class="col-sm-12 col-md-5 col-lg-5 ">
+		<div class="indexcontainer">
+			<h1 align="center"> Translation </h1>
+			<h4 align="center"> Type the word to see its meaning</h4>
+					{% if Translation %}
+					<select id="select-item" placeholder="Select a person..." >
+					{% for item in Translation %}
+						<option value="{{item.translation_item}}">{{item.translation_item}}
+					{% endfor %}
+					</select>
+					</select>
+				
+					{% else%}
+					<strong> There are no items loaded</strong>
 				{% endif %}
 			
 		</div>
@@ -39,7 +58,21 @@ $(function() {
 });
 
 </script>
+<script>
 
+$(function() {
+    $('#select-item').selectize({    create:true, plugins: ['remove_button']
+});
+
+  $('#contacts').submit(function(e){
+    e.preventDefault();
+
+ window.location.href = "http://joinagora.com/events/"
+   
+  });
+});
+
+</script>
 {% endblock %}
 
 <!--"http://joinagora.com/events/#search/all?s="+($('#select-name').val()-->
