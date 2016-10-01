@@ -18,7 +18,7 @@ class UniversityAdmin(admin.ModelAdmin):
 class SocietyAdmin(admin.ModelAdmin):
 	actions = ['download_csv']
 	list_filter = (('university__university_name', 'society_contact_status', 'society_email_status'))
-	list_display=('university', 'society_name', 'society_acronym', 'society_email', 'society_email_status', 'society_contact_status', )
+	list_display=('university', 'society_name', 'society_email', 'society_email_status', 'society_contact_status', 'notes' )
 	search_fields = ['society_name', 'society_acronym']
 
 	#inlines = [
@@ -33,10 +33,10 @@ class SocietyAdmin(admin.ModelAdmin):
 
 		f = StringIO.StringIO()
 		writer = csv.writer(f)
-		writer.writerow(["university", "society_name", "society_acronym", "society_email", "society_email_status", "society_contact_status" ])
+		writer.writerow(["university", "society_name", "society_acronym", "society_email", "society_email_status", "society_contact_status", "notes" ])
 
 		for s in queryset:
-		    writer.writerow([s.university, s.society_name, s.society_acronym, s.society_email, s.society_email_status, s.society_contact_status])
+		    writer.writerow([s.university, s.society_name, s.society_acronym, s.society_email, s.society_email_status, s.society_contact_status, s.notes])
 
 		f.seek(0)
 		response = HttpResponse(f, content_type='text/csv')

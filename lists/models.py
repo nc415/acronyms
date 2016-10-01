@@ -27,6 +27,7 @@ class University(models.Model):
 		)
 	rag=models.CharField(max_length=1, choices=RAG_CHOICES)
 
+
 	
 # Define as slug to use as the URL
 	slug = models.SlugField(blank=True, unique=True)
@@ -55,8 +56,8 @@ class University(models.Model):
 class Society(models.Model):
 	university=models.ForeignKey(University, default=0)
 	society_name=models.CharField(max_length=256, unique=True)
-	society_acronym=models.CharField(max_length=100, unique=False)
-	society_email=models.EmailField(max_length=254)
+	society_acronym=models.CharField(max_length=100, unique=False, blank=True)
+	society_email=models.EmailField(max_length=254, blank=True)
 	STATUS_CHOICES = (
 		('P', 'PASSED'),
 		('U', 'UNKNOWN'),
@@ -64,11 +65,12 @@ class Society(models.Model):
 		)
 	society_email_status=models.CharField(max_length=1, choices=STATUS_CHOICES)
 	CONTACT_STATUS_CHOICES =(
-		('1', 'Positive Response'),
+		('1', 'Whitelist'),
 		('2', 'Blacklist'),
 		)
 	society_contact_status=models.CharField(max_length=1, choices=CONTACT_STATUS_CHOICES)
 	society_slug = models.SlugField(blank=True, unique=True)
+	notes=models.TextField(blank=True, default="")
 
 	def save (self, *args, **kwargs):
 		society_name=str(self.society_name)
