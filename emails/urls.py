@@ -22,6 +22,7 @@ from lists import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^lists/', include('lists.urls')),
+    url(r'^advanced_filters/', include('advanced_filters.urls')),
    
 ]
 

@@ -1,8 +1,8 @@
 from django.contrib import admin
 from django.contrib.admin.views.main import ChangeList
+
+from advanced_filters.admin import AdminAdvancedFiltersMixin
 from lists.models import University, Society, EmailHistory, Acronyms, Site
-
-
 # Register your models here.
 # Register your models here.
     
@@ -15,17 +15,16 @@ class UniversityAdmin(admin.ModelAdmin):
 	list_display=('university_name', 'university_acronym', 'rag')
 	
 
-#class EmailHistoryAdmin(admin.StackedInline):
-	#model=EmailHistory
-	#fk_name = 'society'
 
 
-class SocietyAdmin(admin.ModelAdmin):
+class SocietyAdmin(AdminAdvancedFiltersMixin, admin.ModelAdmin):
 	actions = ['download_csv']
 	list_filter = (('site','university__university_name', 'society_contact_status', 'society_email_status'))
 	list_display=('university', 'society_name', 'society_email', 'society_email_status', 'society_contact_status', 'notes' )
 	search_fields = ['society_name', 'society_acronym']
-	
+	advanced_filter_fields = (
+        'site','university__university_name', 'society_contact_status', 'society_email_status'
+    )
 
 	#inlines = [
      #   EmailHistoryAdmin,
