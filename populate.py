@@ -32,22 +32,3 @@ with open('camb.csv', 'r') as csvfile:
 		if __name__ == '__main__':
 			print("Starting population script")
 			populate()
-
-with open('cambacronyms.csv', 'r') as csvfile:
-	acronymreader=csv.reader(csvfile, delimiter=',', quotechar='|')
-
-	for row in acronymreader:
-		print (row[0])
-
-		def acronympopulate():
-			society2=add_acronym(name=row[0])
-		def add_acronym(name):
-			try:
-				d=Acronym.objects.get_or_create(name=name)
-				return d
-			except:
-				pass
-
-			if __name__ =='__main__'
-			print ("New Acronym")
-			populate()
