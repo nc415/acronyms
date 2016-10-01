@@ -20,12 +20,13 @@ with open('camb.csv', 'r') as csvfile:
 			
 
 		def add_society(society_name, society_acronym, society_email, society_email_status ) :
-		
-			Uni=University.objects.get(pk=1)
-			print (society_email_status)
-			c=Society.objects.get_or_create(society_name=society_name, society_acronym=society_acronym, society_email=society_email ,  university=Uni, society_email_status=society_email_status)[0]
-			return c
-			
+			try:
+				Uni=University.objects.get(pk=1)
+				print (society_email_status)
+				c=Society.objects.get_or_create(society_name=society_name, society_acronym=society_acronym, society_email=society_email ,  university=Uni, society_email_status=society_email_status)[0]
+				return c
+			except:
+				pass
 
 
 		if __name__ == '__main__':
