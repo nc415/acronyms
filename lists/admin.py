@@ -1,25 +1,31 @@
 from django.contrib import admin
 from django.contrib.admin.views.main import ChangeList
-from lists.models import University, Society, EmailHistory, Acronyms
+from lists.models import University, Society, EmailHistory, Acronyms, Site
 
 
 # Register your models here.
 # Register your models here.
-
+    
 class AcronymsAdmin(admin.ModelAdmin):
 	list_display=('name','name_only')
+
+class SiteAdmin(admin.ModelAdmin):
+	list_display=('site_name',)
 class UniversityAdmin(admin.ModelAdmin):
-	list_display=('site','university_name', 'university_acronym', 'rag')
+	list_display=('university_name', 'university_acronym', 'rag')
+	
 
 #class EmailHistoryAdmin(admin.StackedInline):
 	#model=EmailHistory
 	#fk_name = 'society'
 
+
 class SocietyAdmin(admin.ModelAdmin):
 	actions = ['download_csv']
-	list_filter = (('university__university_name', 'society_contact_status', 'society_email_status'))
+	list_filter = (('site','university__university_name', 'society_contact_status', 'society_email_status'))
 	list_display=('university', 'society_name', 'society_email', 'society_email_status', 'society_contact_status', 'notes' )
 	search_fields = ['society_name', 'society_acronym']
+	
 
 	#inlines = [
      #   EmailHistoryAdmin,
@@ -46,6 +52,7 @@ class SocietyAdmin(admin.ModelAdmin):
 admin.site.register(University, UniversityAdmin)
 admin.site.register(Society, SocietyAdmin)
 admin.site.register(Acronyms, AcronymsAdmin)
+admin.site.register(Site, SiteAdmin)
 #admin.site.register(EmailHistory, EmailHistoryAdmin)
 
 

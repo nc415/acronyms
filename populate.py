@@ -3,7 +3,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'emails.settings')
 
 import django
 django.setup()
-from lists.models import Society, University
+from lists.models import Society, University, Site
 from datetime import datetime
 import csv 
 
@@ -21,9 +21,10 @@ with open('camb.csv', 'r') as csvfile:
 
 		def add_society(society_name, society_acronym, society_email, society_email_status ) :
 			try:
-				Uni=University.objects.get(pk=1)
+				Sit=Site.objects.get(pk=1)
+				Uni=University.objects.get(pk=5)
 				print (society_email_status)
-				c=Society.objects.get_or_create(society_name=society_name, society_acronym=society_acronym, society_email=society_email ,  university=Uni, society_email_status=society_email_status)[0]
+				c=Society.objects.get_or_create(site=Sit, society_name=society_name, society_acronym=society_acronym, society_email=society_email ,  university=Uni, society_email_status=society_email_status)[0]
 				return c
 			except:
 				pass

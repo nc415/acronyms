@@ -13,12 +13,12 @@ class Acronyms(models.Model):
 	def __str__(self):
 			return self.name
 
+class Site(models.Model):
+	site_name=models.CharField(max_length=200, unique=True)
+	def __str__(self):
+			return self.site_name
 class University(models.Model):
-	SITE_CHOICES = (
-		('L', 'London'),
-		('O', 'Oxford'),
-		('C', 'Cambridge'),)
-	site = models.CharField(max_length=1, choices=SITE_CHOICES)
+	site = models.ForeignKey(Site, default=0)
 	university_name=models.CharField(max_length=128, unique=True)
 	university_acronym=models.CharField(max_length=128, unique=True)
 	RAG_CHOICES = (
@@ -54,6 +54,7 @@ class University(models.Model):
 
 
 class Society(models.Model):
+	site=models.ForeignKey(Site, default=0)
 	university=models.ForeignKey(University, default=0)
 	society_name=models.CharField(max_length=256, unique=True)
 	society_acronym=models.CharField(max_length=100, unique=False, blank=True)
