@@ -3,7 +3,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'emails.settings')
 
 import django
 django.setup()
-from lists.models import Society, University, Acronym
+from lists.models import Society, University
 from datetime import datetime
 import csv 
 
