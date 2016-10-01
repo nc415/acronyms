@@ -285,7 +285,16 @@
 .selectize-dropdown-content {
   overflow-y: auto;
   overflow-x: hidden;
-  max-height: 200px;
+  max-height: 300px;
+  font-size: 26px;
+}
+@media (min-width: 768px){
+  .selectize-dropdown-content {
+     overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 200px;
+    font-size: 18px;
+  }
 }
 .selectize-control.single .selectize-input,
 .selectize-control.single .selectize-input input {
